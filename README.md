@@ -63,16 +63,16 @@ We employed Human-Centered Design (HCD) to elicit user requirements to form the 
 	* Trustworthy
 	* Case worker / children photos
 	* Print time-stamped case worker conversations  
-* Created [user stories](https://github.com/mscws/cws-caseworker-parent-portal-documentation/tree/master/stories)
-	* [Child Care Provider Basic Search](https://github.com/mscws/cws-careworker-parent-portal-documentation/wiki/User-Story:-Child-Care-Provider-Basic-Search)
-	* [Child Care Provider Advanced Search](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/User-Story:-Child-Care-Provider-Advanced-Search)
-	* [Child Care Provider Map Search](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/User-Story:-Child-Care-Provider-Map-Search)
-	* [Schedule Service Provider Appointment](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/User-Story:-Schedule-Service-Provider-Appointment)
-	* [EmailorCallChildCareProvider](https://github.com/mscws/cws-casweorker-parent-portal-documentation/wiki/User-Story:-Email-or-Call-Child-Care-Provider)
-	* [Multi-Language](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Multi-Language)
-	* [Cancel Button Top Menu](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Cancel-Button-Top-Menu)
-	* [Understanding Quality Star Ratings](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Understanding-Quality-Star-Ratings)
-	* [Sorting Through Quality Star Ratings Search Results](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Sorting-Through-Quality-Star-Ratings-Search-Results)
+* Created [user stories](https://github.com/mscws/cws-caseworker-parent-portal/tree/master/stories)
+	* [Child Care Provider Basic Search](https://github.com/mscws/cws-careworker-parent-portal/wiki/User-Story:-Child-Care-Provider-Basic-Search)
+	* [Child Care Provider Advanced Search](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Child-Care-Provider-Advanced-Search)
+	* [Child Care Provider Map Search](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Child-Care-Provider-Map-Search)
+	* [Schedule Service Provider Appointment](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Schedule-Service-Provider-Appointment)
+	* [EmailorCallChildCareProvider](https://github.com/mscws/cws-casweorker-parent-portalwiki/User-Story:-Email-or-Call-Child-Care-Provider)
+	* [Multi-Language](https://github.com/taborda-cws-prototype/cws-parent-portal/wiki/User-Story:-Multi-Language)
+	* [Cancel Button Top Menu](https://github.com/taborda-cws-prototype/cws-parent-portal/wiki/User-Story:-Cancel-Button-Top-Menu)
+	* [Understanding Quality Star Ratings](https://github.com/taborda-cws-prototype/cws-parent-portal/wiki/User-Story:-Understanding-Quality-Star-Ratings)
+	* [Sorting Through Quality Star Ratings Search Results](https://github.com/taborda-cws-prototype/cws-parent-portal/wiki/User-Story:-Sorting-Through-Quality-Star-Ratings-Search-Results)
 * Brainstormed designs during internal & user [whiteboard sessions](https://github.com/mscws/cws-caseworker-parent-portal-documentation/tree/master/whiteboard) *(2c)*
 * Updated user stories elaborations, including acceptance criteria *(2g)*
 
