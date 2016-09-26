@@ -2,7 +2,7 @@ Prototype URL: [https://parentportal.tabordasolutions.net](https://parentportal.
 
 [User Guide](https://github.com/taborda-cws-prototype/cws-parent-portal/wiki/Parent-Portal-Prototype-User-Guide)
 
-## Taborda - ADPQ Prototype
+## Unisys - MS CWS Prototype
 # Technical Approach *(2)*
 
 Our team utilized an “*outside-in*” product development approach to create our ADPQ prototype. “*Outside-in*” focuses on the end user’s needs and experience to drive features, along with supporting application program interfaces (API). Focusing on the end user means that their needs are implemented pervasively throughout the application. This practice promotes user satisfaction and adoption through continuous interaction/feedback.  Our team utilized the following approach for this prototype:
@@ -33,14 +33,13 @@ Taborda assigned Brendan McGuire as the one leader with authority, responsibilit
 ## Product Development Team *(2b)*
 Multi-disciplinary and collaborative team includes eight (8) labor categories:
 
-1. Product Owner – Brendan McGuire, CSM
-2. Technical Architect – Rich Bach, CSM
-3. Interaction Designer/User Researcher/Usability Tester – Lacy Carter, CSPO
-4. Visual Designer – Husam Alrubaye
-5. Front End Web Developer – Justin Castillo, Husam Alrubaye
-6. Back End Web Developer – Tom Parker
-7. DevOps Engineer – Chris O'Meara, CSM
-8. Agile Coach – Gregg Hill, CSM
+1. Product Owner – Christopher Cox
+2. Technical Architect / Back End Web Developer – Kirtish Kulkarni
+3. Front End Web Developer – Arun Purohit
+4. Interaction Designer/User Researcher/Usability Tester – Lacy Carter
+5. Tech Writer – Marth Koffman 
+6. Lawyer – TBD
+8. Agile Coach / Scrum Master – Altony Rice
 
 # Understanding of User Needs*(2c)*
 We employed Human-Centered Design (HCD) to elicit user requirements to form the Product Backlog. The section below summarizes our HCD process for the prototype. [Details here](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/Human-Centered-Design-Process)
@@ -51,7 +50,7 @@ We employed Human-Centered Design (HCD) to elicit user requirements to form the 
 
 ### Inspiration
 
-* Developed **Design Challenge**: "*How might we implement a modern, convenient app for parents to communicate with case workers and easily access resources?*"
+* Developed **Design Challenge**: "*As a caseworker or parent, I would like to search for child care providers in my vicinity so that I can choose the best provider for a child*"
 * Conducted 1:1 and Group Interviews with real case worker and several non-participating staff
 * Conducted user research to identify target audiences
 * Developed personas
