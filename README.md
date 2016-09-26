@@ -160,4 +160,4 @@ Deployment in Docker container.
 ### Prototype / Underlying Platform Licensing *(2r)*
 The prototype and underlying platforms are open licensed and free of charge.
 
-### [Notes and Assumptions](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/Notes-and-Assumptions)
+### [Notes and Assumptions](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Notes-and-Assumptions) 
