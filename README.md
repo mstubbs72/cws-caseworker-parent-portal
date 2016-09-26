@@ -1,6 +1,6 @@
 Prototype URL: [https://parentportal.tabordasolutions.net](https://parentportal.tabordasolutions.net)
 
-[User Guide](https://github.com/taborda-cws-prototype/cws-parent-portal/wiki/Parent-Portal-Prototype-User-Guide)
+[User Guide](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Caseworker-Parent-Portal-Prototype-User-Guide)
 
 ## Unisys - MS CWS Prototype
 # Technical Approach *(2)*
@@ -13,22 +13,23 @@ Our team utilized an “*outside-in*” product development approach to create o
 * Developed fully interactive prototype web/mobile application. The initial prototype was presented to the representative user base from the user research phase. The findings from users interacting with the application, such as usability improvements, were incorporated into the final design (2g).
 * Developed fully functioning prototype including back end API for data persistence as a series of “*vertical slices*” allowing testing throughout the effort.
 
-The “*outside-in*” product development approach [incorporates the application development aspects of the U.S. Digital Services Playbook ](https://github.com/taborda-cws-prototype/cws-parent-portal/wiki/Adherence-to-U.S.-Digital-Services-Playbook). 
+The “*outside-in*” product development approach [incorporates the application development aspects of the U.S. Digital Services Playbook ](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Adherence-to-U.S.-Digital-Services-Playbook). 
 
 
 ## Architecture
 
 Our architecture is based on JavaScript (Angular.js) with a Java API (Dropwizard) and PostgreSQL database.
 
-[Application Architecture](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/Application-Architecture)
+[Application Architecture](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/Application-Architecture)
 
 # Adherence to U.S. Digital Services Playbook *(2)*
 
-We followed all of the applicable Playbook plays. [Details here](https://github.com/taborda-cws-prototype/cws-parent-portal/wiki/Adherence-to-U.S.-Digital-Services-Playbook).
+We followed all of the applicable Playbook plays. [Details here](https://github.com/taborda-cws-prototype/cws-caseworker-parent-portal/wiki/Adherence-to-U.S.-Digital-Services-Playbook).
 
 # Taborda Prototype Team
 ## Team Leader *(2a)*
 Taborda assigned Brendan McGuire as the one leader with authority, responsibility, and accountability for prototype quality.
+
 
 ## Product Development Team *(2b)*
 Multi-disciplinary and collaborative team includes eight (8) labor categories:
@@ -46,7 +47,7 @@ We employed Human-Centered Design (HCD) to elicit user requirements to form the 
 
 ## Human-Centered Design *(2d)*
 
-[Our HCD process](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/Human-Centered-Design-Process) leveraged the following techniques:
+[Our HCD process](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/Human-Centered-Design-Process) leveraged the following techniques:
 
 ### Inspiration
 
@@ -68,6 +69,9 @@ We employed Human-Centered Design (HCD) to elicit user requirements to form the 
 	* [Child Care Provider Map Search](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/User-Story:-Child-Care-Provider-Map-Search)
 	* [Schedule Service Provider Appointment](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/User-Story:-Schedule-Service-Provider-Appointment)
 	* [EmailorCallChildCareProvider](https://github.com/mscws/cws-casweorker-parent-portal-documentation/wiki/User-Story:-Email-or-Call-Child-Care-Provider)
+	* [Multi-Language](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Multi-Language)
+	* [Receive Messages](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Receive-Messages)
+	* [Receive Messages](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Receive-Messages)
 	* [Receive Messages](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Receive-Messages)
 * Brainstormed designs during internal & user [whiteboard sessions](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/tree/master/whiteboard) *(2c)*
 * Updated user stories elaborations, including acceptance criteria *(2g)*
