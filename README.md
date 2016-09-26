@@ -20,7 +20,7 @@ The “*outside-in*” product development approach [incorporates the applicatio
 
 Our architecture is based on JavaScript (Angular.js) with a Java API (Dropwizard) and PostgreSQL database.
 
-[Application Architecture](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/Application-Architecture)
+[Application Architecture](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Application-Architecture)
 
 # Adherence to U.S. Digital Services Playbook *(2)*
 
@@ -43,11 +43,11 @@ Multi-disciplinary and collaborative team includes eight (8) labor categories:
 8. Agile Coach / Scrum Master – Altony Rice
 
 # Understanding of User Needs*(2c)*
-We employed Human-Centered Design (HCD) to elicit user requirements to form the Product Backlog. The section below summarizes our HCD process for the prototype. [Details here](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/Human-Centered-Design-Process)
+We employed Human-Centered Design (HCD) to elicit user requirements to form the Product Backlog. The section below summarizes our HCD process for the prototype. [Details here](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Human-Centered-Design-Process)
 
 ## Human-Centered Design *(2d)*
 
-[Our HCD process](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/Human-Centered-Design-Process) leveraged the following techniques:
+[Our HCD process](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Human-Centered-Design-Process) leveraged the following techniques:
 
 ### Inspiration
 
@@ -132,13 +132,13 @@ Implemented Jenkins inside Docker container on AWS for automated testing as code
 #### Prototype Deployment Environment *(2j)*
 The prototype deployed to AWS (FedRAMP-certified IaaS). 
 
-[Infrastructure Architecture](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/Infrastructure-Architecture)
+[Infrastructure Architecture](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Infrastructure-Architecture)
 
 
 #### Configuration Management *(2n)*
 The GitHub Repository is organized as:
 
-* [Taborda CWS Prototype](https://github.com/mscws/cws-caseworker-parent-portal)
+* [Unisys CWS Prototype](https://github.com/mscws/cws-caseworker-parent-portal)
 
 Additional repositories were utilized to support CI pipelines and are available below:
 
