@@ -37,7 +37,7 @@ Multi-disciplinary and collaborative team includes eight (8) labor categories:
 2. Technical Architect / Back End Web Developer – Kirtish Kulkarni
 3. Front End Web Developer – Arun Purohit
 4. Interaction Designer/User Researcher/Usability Tester – Lacy Carter
-5. Tech Writer – Marth Koffman 
+5. Tech Writer – Martha Koffman 
 6. Lawyer – TBD
 8. Agile Coach / Scrum Master – Altony Rice
 
