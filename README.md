@@ -62,12 +62,12 @@ We employed Human-Centered Design (HCD) to elicit user requirements to form the 
 	* Trustworthy
 	* Case worker / children photos
 	* Print time-stamped case worker conversations  
-* Created [user stories](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/tree/master/stories)
-	* [Create Profile](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Create-Profile)
-	* [Log In / Register](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Log-in-or-Register)
-	* [Update/View Profile](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-View-or-Update-Profile)
-	* [View Foster Family Agencies in Zip](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-View-Foster-Agencies-in-Zip)
-	* [Send/Reply to Message](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Send-or-Reply-to-Message)
+* Created [user stories](https://github.com/mscws/cws-caseworker-parent-portal-documentation/tree/master/stories)
+	* [Child Care Provider Basic Search](https://github.com/mscws/cws-careworker-parent-portal-documentation/wiki/User-Story:-Child-Care-Provider-Basic-Search)
+	* [Child Care Provider Advanced Search](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/User-Story:-Child-Care-Provider-Advanced-Search)
+	* [Child Care Provider Map Search](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/User-Story:-Child-Care-Provider-Map-Search)
+	* [Schedule Service Provider Appointment](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/User-Story:-Schedule-Service-Provider-Appointment)
+	* [EmailorCallChildCareProvider](https://github.com/mscws/cws-casweorker-parent-portal-documentation/wiki/User-Story:-Email-or-Call-Child-Care-Provider)
 	* [Receive Messages](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Receive-Messages)
 * Brainstormed designs during internal & user [whiteboard sessions](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/tree/master/whiteboard) *(2c)*
 * Updated user stories elaborations, including acceptance criteria *(2g)*
@@ -117,7 +117,7 @@ We employed Human-Centered Design (HCD) to elicit user requirements to form the 
 Implemented Jenkins inside Docker container on AWS for automated testing as code is checked in to GitHub.
 
 * Configuration Management - GitHub
-* Continuous Integration Automation - Jenkins [CI Screenshots] (https://github.com/taborda-cws-prototype/cws-parent-portal/wiki/Continuous-Integration) (6/2016)
+* Continuous Integration Automation - Jenkins [CI Screenshots] (https://github.com/mscws/cws-caseworker-parent-portal/wiki/Continuous-Integration) (6/2016)
 * Build
 	* Front end – Gulp (6/2016)
 	* Back end – Gradle (6/2016)
@@ -128,17 +128,17 @@ Implemented Jenkins inside Docker container on AWS for automated testing as code
 #### Prototype Deployment Environment *(2j)*
 The prototype deployed to AWS (FedRAMP-certified IaaS). 
 
-[Infrastructure Architecture](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/Infrastructure-Architecture)
+[Infrastructure Architecture](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/Infrastructure-Architecture)
 
 
 #### Configuration Management *(2n)*
 The GitHub Repository is organized as:
 
-* [Taborda CWS Prototype](https://github.com/taborda-cws-prototype/cws-parent-portal)
+* [Taborda CWS Prototype](https://github.com/mscws/cws-caseworker-parent-portal)
 
 Additional repositories were utilized to support CI pipelines and are available below:
 
-[GitHub Repositories](https://github.com/taborda-cws-prototype/cws-parent-portal/wiki/GitHub-Repositories)
+[GitHub Repositories](https://github.com/mscws/cws-caseworker-parent-portal/wiki/GitHub-Repositories)
 
 ### Continuous Monitoring *(2o)*
 Implemented the following monitoring:
@@ -151,9 +151,9 @@ Implemented the following monitoring:
 Deployment in Docker container.
 
 ### Deployment Documentation *(2q)*
-[Deployment Docs](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/Deployment-Documentation)
+[Deployment Docs](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/Deployment-Documentation)
 
 ### Prototype / Underlying Platform Licensing *(2r)*
 The prototype and underlying platforms are open licensed and free of charge.
 
-### [Notes and Assumptions](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/Notes-and-Assumptions)
+### [Notes and Assumptions](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/Notes-and-Assumptions)
