@@ -32,9 +32,7 @@ Make a new, empty directory for files related to the deployment and change to th
 
 Use the aws ecr get-login command to authenticate Docker to the Parent Portal Container Registry:
 
-	% export AWS_ACCESS_KEY_ID=AKIAJKNPWWGBJZJSSPXA
-	% export AWS_SECRET_ACCESS_KEY=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
-	% $(aws ecr get-login --region us-west-2)
+	
 
 Please use the exact credentials specified above. These correspond to a read-only user created specifically for
 deployment.
@@ -49,39 +47,7 @@ defining and running multi-container applications.
 
 Use your favorite editor to create a file called docker-compose.yml with the following content.
 
-```Dockerfile
-version: '2'
-services:
-  db:
-    image: "postgres:9.4"
-    ports:
-      - "5432:5432"
-    environment:
-      - POSTGRES_USER=cpp
-      - POSTGRES_PASSWORD=password1
-  api:
-    image: "297353277856.dkr.ecr.us-west-2.amazonaws.com/parent-portal-api:latest"
-    ports:
-      - "8081:8080"
-    volumes:
-      - ./api/log:/var/log/cws-parent-portal-api
-    environment:
-      - DB_USER=cpp
-      - DB_PASSWORD=password1
-      - DB_JDBC_URL=jdbc:postgresql://db/cpp
-    depends_on:
-      - db
-    links:
-      - db
-  ui:
-    image: "297353277856.dkr.ecr.us-west-2.amazonaws.com/parent-portal-ui:latest"
-    ports:
-      - "8080:8080"
-    volumes:
-      - ./ui/log:/var/log/cws-parent-portal-ui
-      - ./ui/env.js:/usr/local/share/cws-parent-portal-ui/env.js
-      - ./ui/nginx.conf:/usr/local/etc/cws-parent-portal-ui/nginx.conf
-```
+
 
 This configuration instantiates
 
