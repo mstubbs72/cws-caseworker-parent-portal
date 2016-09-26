@@ -151,7 +151,7 @@ Implemented the following monitoring:
 Deployment in Docker container.
 
 ### Deployment Documentation *(2q)*
-[Deployment Docs](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/Deployment-Documentation)
+[Deployment Docs](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/Deployment-Documentation)
 
 ### Prototype / Underlying Platform Licensing *(2r)*
 The prototype and underlying platforms are open licensed and free of charge.
