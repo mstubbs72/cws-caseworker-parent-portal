@@ -24,11 +24,11 @@ Our architecture is based on JavaScript (Angular.js) with a Java API (Dropwizard
 
 # Adherence to U.S. Digital Services Playbook *(2)*
 
-We followed all of the applicable Playbook plays. [Details here](https://github.com/taborda-cws-prototype/cws-caseworker-parent-portal/wiki/Adherence-to-U.S.-Digital-Services-Playbook).
+We followed all of the applicable Playbook plays. [Details here](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Adherence-to-U.S.-Digital-Services-Playbook).
 
-# Taborda Prototype Team
+# Unisys Prototype Team
 ## Team Leader *(2a)*
-Taborda assigned Brendan McGuire as the one leader with authority, responsibility, and accountability for prototype quality.
+Unisys assigned Christopher Cox as the one leader with authority, responsibility, and accountability for prototype quality.
 
 
 ## Product Development Team *(2b)*
@@ -43,7 +43,7 @@ Multi-disciplinary and collaborative team includes eight (8) labor categories:
 8. Agile Coach / Scrum Master – Altony Rice
 
 # Understanding of User Needs*(2c)*
-We employed Human-Centered Design (HCD) to elicit user requirements to form the Product Backlog. The section below summarizes our HCD process for the prototype. [Details here](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/Human-Centered-Design-Process)
+We employed Human-Centered Design (HCD) to elicit user requirements to form the Product Backlog. The section below summarizes our HCD process for the prototype. [Details here](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/Human-Centered-Design-Process)
 
 ## Human-Centered Design *(2d)*
 
@@ -70,16 +70,16 @@ We employed Human-Centered Design (HCD) to elicit user requirements to form the 
 	* [Schedule Service Provider Appointment](https://github.com/mscws/cws-caseworker-parent-portal-documentation/wiki/User-Story:-Schedule-Service-Provider-Appointment)
 	* [EmailorCallChildCareProvider](https://github.com/mscws/cws-casweorker-parent-portal-documentation/wiki/User-Story:-Email-or-Call-Child-Care-Provider)
 	* [Multi-Language](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Multi-Language)
-	* [Receive Messages](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Receive-Messages)
-	* [Receive Messages](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Receive-Messages)
-	* [Receive Messages](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Receive-Messages)
-* Brainstormed designs during internal & user [whiteboard sessions](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/tree/master/whiteboard) *(2c)*
+	* [Cancel Button Top Menu](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Cancel-Button-Top-Menu)
+	* [Understanding Quality Star Ratings](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Understanding-Quality-Star-Ratings)
+	* [Sorting Through Quality Star Ratings Search Results](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Sorting-Through-Quality-Star-Ratings-Search-Results)
+* Brainstormed designs during internal & user [whiteboard sessions](https://github.com/mscws/cws-caseworker-parent-portal-documentation/tree/master/whiteboard) *(2c)*
 * Updated user stories elaborations, including acceptance criteria *(2g)*
 
 ### Implementation
-* Developed [Balsamiq low-fi wireframes](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/tree/master/wireframes) - using whiteboard designs & feedback from internal / user testing *(2g)*
+* Developed [Balsamiq low-fi wireframes](https://github.com/mscws/cws-caseworker-parent-portal-documentation/tree/master/wireframes) - using whiteboard designs & feedback from internal / user testing *(2g)*
 * Conducted user tests and gathered feedback *(2f)*
-* Developed [PhotoShop/InVision high-fi web mockup prototype](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/tree/master/hi-fi-mockups) - using wireframes / user testing feedback *(2g)*
+* Developed [PhotoShop/InVision high-fi web mockup prototype](https://github.com/mscws/cws-caseworker-parent-portal-documentation/tree/master/hi-fi-mockups) - using wireframes / user testing feedback *(2g)*
 * Conducted mockup prototype user tests; gathered feedback *(2f)*
 * Developed live [Design Style Guide (DSG)](https://parentportal.tabordasolutions.net/guidelines.html) using bootstrap/SASS/CSS/HTML. DSG elements leveraged HTML mockup / user testing feedback. *(2g)*
 * Conducted responsive design testing on desktop (Mac, PC) and mobile devices (iOS, Android) *(2h)*
