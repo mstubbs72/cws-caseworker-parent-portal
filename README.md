@@ -155,7 +155,7 @@ Implemented the following monitoring:
 * PagerDuty delivers alerts to the Taborda operations team according to a 24x7 duty schedule.
 
 ### Containerization *(2p)*
-The prototype wasn't deployed in a container (such as Docker) due to limited time to complete the vendor challenge.
+The prototype wasn't deployed in a container (such as Docker) due to the limited amount of time to complete the vendor challenge.
 
 ### Deployment Documentation *(2q)*
 [Deployment Docs](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Deployment-Documentation)
