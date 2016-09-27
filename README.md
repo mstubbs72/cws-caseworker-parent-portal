@@ -32,15 +32,16 @@ Unisys assigned Christopher Cox as the one leader with authority, responsibility
 
 
 ## Product Development Team *(2b)*
-Multi-disciplinary and collaborative team includes eight (7) labor categories:
+Multi-disciplinary and collaborative team includes eight (8) labor categories:
 
 1. Product Owner – Christopher Cox
 2. Technical Architect / Back End Web Developer – Kirtish Kulkarni
-3. Front End Web Developer – Arun Purohit
+3. Front End Web Developer – Ankit Kumar
 4. Interaction Designer/User Researcher/Usability Tester – Lacy Carter
 5. Tech Writer – Martha Koffman 
 6. Lawyer – TBD
-7. Agile Coach / Scrum Master – Altony Rice
+7. Visual Designer - Arun Purohit
+8. Agile Coach / Scrum Master – Altony Rice
 
 # Understanding of User Needs*(2c)*
 We employed Human-Centered Design (HCD) to elicit user requirements to form the Product Backlog. The section below summarizes our HCD process for the prototype. [Details here](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Human-Centered-Design-Process)
