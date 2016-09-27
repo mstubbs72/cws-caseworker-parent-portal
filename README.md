@@ -64,7 +64,7 @@ We employed Human-Centered Design (HCD) to elicit user requirements to form the 
 	* Case worker / children photos
 	* Print time-stamped case worker conversations  
 * Created [user stories](https://github.com/mscws/cws-caseworker-parent-portal/tree/master/stories)
-	* [Child Care Home Page](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Child-Care-Home-Page)
+	* [Child Care Provider Home Page](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Child-Care-Provider-Home-Page)
 	* [Parent Login/Registration Page](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Parent-Login-Registration-Page)
 	* [Child Care Provider Basic Search](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Child-Care-Provider-Basic-Search)
 	* [Child Care Provider Advanced Search](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Child-Care-Provider-Advanced-Search)
