@@ -5,10 +5,10 @@ Prototype URL: [https://parentportal.tabordasolutions.net](https://parentportal.
 ## Unisys - MS CWS Prototype
 # Technical Approach *(2)*
 
-Our team utilized an “*outside-in*” product development approach to create our ADPQ prototype. “*Outside-in*” focuses on the end user’s needs and experience to drive features, along with supporting application program interfaces (API). Focusing on the end user means that their needs are implemented pervasively throughout the application. This practice promotes user satisfaction and adoption through continuous interaction/feedback.  Our team utilized the following approach for this prototype:
+Our team utilized an “*outside-in*” product development approach to create our MS CWS prototype. “*Outside-in*” focuses on the end user’s needs and experience to drive features, along with supporting application program interfaces (API). Focusing on the end user means that their needs are implemented pervasively throughout the application. This practice promotes user satisfaction and adoption through continuous interaction/feedback.  Our team utilized the following approach for this prototype:
 
-* Conducted user research to understand needs and trends within related industry. Our User Researcher conducted user interviews with a current CPS worker, along with people acting as the identified personas (parent/guardian) to create the initial application concept (2c).
-* Created initial UI documented as wireframes (Balsamiq) which were presented to both CPS workers and staff members representing the personas associated with the system. Feedback was incorporated into an updated UI design (InVision) (2g).
+* Conducted user research to understand needs and trends within related industry. Our User Researcher conducted user interviews with a current Case Worker, along with people acting as the identified personas (parent/guardian) to create the initial application concept (2c).
+* Created initial UI documented as wireframes (Balsamiq) which were presented to staff members representing the personas associated with the system. Feedback was incorporated into an updated UI design (InVision) (2g).
 * Identified user stories to form initial product backlog. 
 * Developed fully interactive prototype web/mobile application. The initial prototype was presented to the representative user base from the user research phase. The findings from users interacting with the application, such as usability improvements, were incorporated into the final design (2g).
 * Developed fully functioning prototype including back end API for data persistence as a series of “*vertical slices*” allowing testing throughout the effort.
@@ -32,7 +32,7 @@ Unisys assigned Christopher Cox as the one leader with authority, responsibility
 
 
 ## Product Development Team *(2b)*
-Multi-disciplinary and collaborative team includes eight (8) labor categories:
+Multi-disciplinary and collaborative team includes eight (7) labor categories:
 
 1. Product Owner – Christopher Cox
 2. Technical Architect / Back End Web Developer – Kirtish Kulkarni
@@ -40,7 +40,7 @@ Multi-disciplinary and collaborative team includes eight (8) labor categories:
 4. Interaction Designer/User Researcher/Usability Tester – Lacy Carter
 5. Tech Writer – Martha Koffman 
 6. Lawyer – TBD
-8. Agile Coach / Scrum Master – Altony Rice
+7. Agile Coach / Scrum Master – Altony Rice
 
 # Understanding of User Needs*(2c)*
 We employed Human-Centered Design (HCD) to elicit user requirements to form the Product Backlog. The section below summarizes our HCD process for the prototype. [Details here](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Human-Centered-Design-Process)
