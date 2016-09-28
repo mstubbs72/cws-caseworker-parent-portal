@@ -1,57 +1,58 @@
 Prototype URL: [https://parentportal.tabordasolutions.net](https://parentportal.tabordasolutions.net)
 
-[User Guide](https://github.com/taborda-cws-prototype/cws-parent-portal/wiki/Parent-Portal-Prototype-User-Guide)
+[User Guide](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Caseworker-Parent-Portal-Prototype-User-Guide)
 
-## Taborda - ADPQ Prototype
+## Unisys - MS CWS Prototype
 # Technical Approach *(2)*
 
-Our team utilized an “*outside-in*” product development approach to create our ADPQ prototype. “*Outside-in*” focuses on the end user’s needs and experience to drive features, along with supporting application program interfaces (API). Focusing on the end user means that their needs are implemented pervasively throughout the application. This practice promotes user satisfaction and adoption through continuous interaction/feedback.  Our team utilized the following approach for this prototype:
+Our team utilized an “*outside-in*” product development approach to create our MS CWS prototype. “*Outside-in*” focuses on the end user’s needs and experience to drive features, along with supporting application program interfaces (API). Focusing on the end user means that their needs are implemented pervasively throughout the application. This practice promotes user satisfaction and adoption through continuous interaction/feedback.  Our team utilized the following approach for this prototype:
 
-* Conducted user research to understand needs and trends within related industry. Our User Researcher conducted user interviews with a current CPS worker, along with people acting as the identified personas (parent/guardian) to create the initial application concept (2c).
-* Created initial UI documented as wireframes (Balsamiq) which were presented to both CPS workers and staff members representing the personas associated with the system. Feedback was incorporated into an updated UI design (InVision) (2g).
+* Conducted user research to understand needs and trends within related industry. Our User Researcher conducted user interviews with a current Case Worker, along with staff members acting as the identified personas (parent/guardian) to create the initial application concept (2c).
+* Created initial UI documented as wireframes (Balsamiq) which were presented to staff members representing the personas associated with the system. Feedback was incorporated into an updated UI design (InVision) (2g).
 * Identified user stories to form initial product backlog. 
 * Developed fully interactive prototype web/mobile application. The initial prototype was presented to the representative user base from the user research phase. The findings from users interacting with the application, such as usability improvements, were incorporated into the final design (2g).
 * Developed fully functioning prototype including back end API for data persistence as a series of “*vertical slices*” allowing testing throughout the effort.
 
-The “*outside-in*” product development approach [incorporates the application development aspects of the U.S. Digital Services Playbook ](https://github.com/taborda-cws-prototype/cws-parent-portal/wiki/Adherence-to-U.S.-Digital-Services-Playbook). 
+The “*outside-in*” product development approach [incorporates the application development aspects of the U.S. Digital Services Playbook ](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Adherence-to-U.S.-Digital-Services-Playbook). 
 
 
 ## Architecture
 
 Our architecture is based on JavaScript (Angular.js) with a Java API (Dropwizard) and PostgreSQL database.
 
-[Application Architecture](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/Application-Architecture)
+[Application Architecture](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Application-Architecture)
 
 # Adherence to U.S. Digital Services Playbook *(2)*
 
-We followed all of the applicable Playbook plays. [Details here](https://github.com/taborda-cws-prototype/cws-parent-portal/wiki/Adherence-to-U.S.-Digital-Services-Playbook).
+We followed all of the applicable Playbook plays. [Details here](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Adherence-to-U.S.-Digital-Services-Playbook).
 
-# Taborda Prototype Team
+# Unisys Prototype Team
 ## Team Leader *(2a)*
-Taborda assigned Brendan McGuire as the one leader with authority, responsibility, and accountability for prototype quality.
+Unisys assigned Christopher Cox as the one leader with authority, responsibility, and accountability for prototype quality.
+
 
 ## Product Development Team *(2b)*
 Multi-disciplinary and collaborative team includes eight (8) labor categories:
 
-1. Product Owner – Brendan McGuire, CSM
-2. Technical Architect – Rich Bach, CSM
-3. Interaction Designer/User Researcher/Usability Tester – Lacy Carter, CSPO
-4. Visual Designer – Husam Alrubaye
-5. Front End Web Developer – Justin Castillo, Husam Alrubaye
-6. Back End Web Developer – Tom Parker
-7. DevOps Engineer – Chris O'Meara, CSM
-8. Agile Coach – Gregg Hill, CSM
+1. Product Owner – Christopher Cox
+2. Technical Architect / Back End Web Developer – Kirtish Kulkarni
+3. Front End Web Developer – Ankit Kumar
+4. Interaction Designer/User Researcher/Usability Tester – Lacy Carter
+5. Tech Writer – Martha Koffman 
+6. Lawyer – TBD
+7. Visual Designer - Arun Purohit
+8. Agile Coach / Scrum Master – Altony Rice
 
 # Understanding of User Needs*(2c)*
-We employed Human-Centered Design (HCD) to elicit user requirements to form the Product Backlog. The section below summarizes our HCD process for the prototype. [Details here](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/Human-Centered-Design-Process)
+We employed Human-Centered Design (HCD) to elicit user requirements to form the Product Backlog. The section below summarizes our HCD process for the prototype. [Details here](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Human-Centered-Design-Process)
 
 ## Human-Centered Design *(2d)*
 
-[Our HCD process](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/Human-Centered-Design-Process) leveraged the following techniques:
+[Our HCD process](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Human-Centered-Design-Process) leveraged the following techniques:
 
 ### Inspiration
 
-* Developed **Design Challenge**: "*How might we implement a modern, convenient app for parents to communicate with case workers and easily access resources?*"
+* Developed **Design Challenge**: "*As a caseworker or parent, I would like to search for child care providers in my vicinity so that I can choose the best provider for a child*"
 * Conducted 1:1 and Group Interviews with real case worker and several non-participating staff
 * Conducted user research to identify target audiences
 * Developed personas
@@ -63,20 +64,25 @@ We employed Human-Centered Design (HCD) to elicit user requirements to form the 
 	* Trustworthy
 	* Case worker / children photos
 	* Print time-stamped case worker conversations  
-* Created [user stories](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/tree/master/stories)
-	* [Create Profile](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Create-Profile)
-	* [Log In / Register](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Log-in-or-Register)
-	* [Update/View Profile](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-View-or-Update-Profile)
-	* [View Foster Family Agencies in Zip](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-View-Foster-Agencies-in-Zip)
-	* [Send/Reply to Message](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Send-or-Reply-to-Message)
-	* [Receive Messages](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/User-Story:-Receive-Messages)
-* Brainstormed designs during internal & user [whiteboard sessions](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/tree/master/whiteboard) *(2c)*
+* Created [user stories](https://github.com/mscws/cws-caseworker-parent-portal/tree/master/stories)
+	* [Child Care Provider Home Page](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Child-Care-Provider-Home-Page)
+	* [Child Care Provider Basic Search](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Child-Care-Provider-Basic-Search)
+	* [Child Care Provider Advanced Search](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Child-Care-Provider-Advanced-Search)
+	* [Child Care Provider Map Search](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Child-Care-Provider-Map-Search)
+	* [Schedule Service Provider Appointment](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Schedule-Service-Provider-Appointment)
+	* [Email or Call Child Care Provider](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Email-or-Call-Child-Care-Provider)
+	* [Multi-Language](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Multi-Language)
+	* [Cancel Button Top Menu](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Cancel-Button-Top-Menu)
+	* [Understanding Quality Star Ratings](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Understanding-Quality-Star-Ratings)
+	* [Filtering and Sorting Search Results](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Filtering-and-Sorting-Search-Results)
+	* [Provider Details Page](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Provider-Details-Page)
+* Brainstormed designs during internal & user [whiteboard sessions](https://github.com/mscws/cws-caseworker-parent-portal-documentation/tree/master/whiteboard) *(2c)*
 * Updated user stories elaborations, including acceptance criteria *(2g)*
 
 ### Implementation
-* Developed [Balsamiq low-fi wireframes](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/tree/master/wireframes) - using whiteboard designs & feedback from internal / user testing *(2g)*
+* Developed [Balsamiq low-fi wireframes](https://github.com/mscws/cws-caseworker-parent-portal-documentation/tree/master/wireframes) - using whiteboard designs & feedback from internal / user testing *(2g)*
 * Conducted user tests and gathered feedback *(2f)*
-* Developed [PhotoShop/InVision high-fi web mockup prototype](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/tree/master/hi-fi-mockups) - using wireframes / user testing feedback *(2g)*
+* Developed [PhotoShop/InVision high-fi web mockup prototype](https://github.com/mscws/cws-caseworker-parent-portal-documentation/tree/master/hi-fi-mockups) - using wireframes / user testing feedback *(2g)*
 * Conducted mockup prototype user tests; gathered feedback *(2f)*
 * Developed live [Design Style Guide (DSG)](https://parentportal.tabordasolutions.net/guidelines.html) using bootstrap/SASS/CSS/HTML. DSG elements leveraged HTML mockup / user testing feedback. *(2g)*
 * Conducted responsive design testing on desktop (Mac, PC) and mobile devices (iOS, Android) *(2h)*
@@ -118,7 +124,7 @@ We employed Human-Centered Design (HCD) to elicit user requirements to form the 
 Implemented Jenkins inside Docker container on AWS for automated testing as code is checked in to GitHub.
 
 * Configuration Management - GitHub
-* Continuous Integration Automation - Jenkins [CI Screenshots] (https://github.com/taborda-cws-prototype/cws-parent-portal/wiki/Continuous-Integration) (6/2016)
+* Continuous Integration Automation - Jenkins [CI Screenshots] (https://github.com/mscws/cws-caseworker-parent-portal/wiki/Continuous-Integration) (6/2016)
 * Build
 	* Front end – Gulp (6/2016)
 	* Back end – Gradle (6/2016)
@@ -129,17 +135,17 @@ Implemented Jenkins inside Docker container on AWS for automated testing as code
 #### Prototype Deployment Environment *(2j)*
 The prototype deployed to AWS (FedRAMP-certified IaaS). 
 
-[Infrastructure Architecture](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/Infrastructure-Architecture)
+[Infrastructure Architecture](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Infrastructure-Architecture)
 
 
 #### Configuration Management *(2n)*
 The GitHub Repository is organized as:
 
-* [Taborda CWS Prototype](https://github.com/taborda-cws-prototype/cws-parent-portal)
+* [Unisys CWS Prototype](https://github.com/mscws/cws-caseworker-parent-portal)
 
 Additional repositories were utilized to support CI pipelines and are available below:
 
-[GitHub Repositories](https://github.com/taborda-cws-prototype/cws-parent-portal/wiki/GitHub-Repositories)
+[GitHub Repositories](https://github.com/mscws/cws-caseworker-parent-portal/wiki/GitHub-Repositories)
 
 ### Continuous Monitoring *(2o)*
 Implemented the following monitoring:
@@ -149,12 +155,12 @@ Implemented the following monitoring:
 * PagerDuty delivers alerts to the Taborda operations team according to a 24x7 duty schedule.
 
 ### Containerization *(2p)*
-Deployment in Docker container.
+The prototype wasn't deployed in a container (such as Docker) due to the limited amount of time to complete the vendor challenge.
 
 ### Deployment Documentation *(2q)*
-[Deployment Docs](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/Deployment-Documentation)
+[Deployment Docs](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Deployment-Documentation)
 
 ### Prototype / Underlying Platform Licensing *(2r)*
 The prototype and underlying platforms are open licensed and free of charge.
 
-### [Notes and Assumptions](https://github.com/taborda-cws-prototype/cws-parent-portal-documentation/wiki/Notes-and-Assumptions)
+### [Notes and Assumptions](https://github.com/mscws/cws-caseworker-parent-portal/wiki/Notes-and-Assumptions) 
