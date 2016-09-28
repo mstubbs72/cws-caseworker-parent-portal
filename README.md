@@ -7,7 +7,7 @@ Prototype URL: [https://parentportal.tabordasolutions.net](https://parentportal.
 
 Our team utilized an “*outside-in*” product development approach to create our MS CWS prototype. “*Outside-in*” focuses on the end user’s needs and experience to drive features, along with supporting application program interfaces (API). Focusing on the end user means that their needs are implemented pervasively throughout the application. This practice promotes user satisfaction and adoption through continuous interaction/feedback.  Our team utilized the following approach for this prototype:
 
-* Conducted user research to understand needs and trends within related industry. Our User Researcher conducted user interviews with a current Case Worker, along with people acting as the identified personas (parent/guardian) to create the initial application concept (2c).
+* Conducted user research to understand needs and trends within related industry. Our User Researcher conducted user interviews with a current Case Worker, along with staff members acting as the identified personas (parent/guardian) to create the initial application concept (2c).
 * Created initial UI documented as wireframes (Balsamiq) which were presented to staff members representing the personas associated with the system. Feedback was incorporated into an updated UI design (InVision) (2g).
 * Identified user stories to form initial product backlog. 
 * Developed fully interactive prototype web/mobile application. The initial prototype was presented to the representative user base from the user research phase. The findings from users interacting with the application, such as usability improvements, were incorporated into the final design (2g).
@@ -66,7 +66,6 @@ We employed Human-Centered Design (HCD) to elicit user requirements to form the 
 	* Print time-stamped case worker conversations  
 * Created [user stories](https://github.com/mscws/cws-caseworker-parent-portal/tree/master/stories)
 	* [Child Care Provider Home Page](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Child-Care-Provider-Home-Page)
-	* [Parent Login/Registration Page](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Parent-Login-Registration-Page)
 	* [Child Care Provider Basic Search](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Child-Care-Provider-Basic-Search)
 	* [Child Care Provider Advanced Search](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Child-Care-Provider-Advanced-Search)
 	* [Child Care Provider Map Search](https://github.com/mscws/cws-caseworker-parent-portal/wiki/User-Story:-Child-Care-Provider-Map-Search)
