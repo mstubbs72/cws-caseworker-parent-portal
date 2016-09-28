@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.unisys.cws.dao.SearchDAO;
+import com.unisys.cws.dao.ISearchDao;
 import com.unisys.cws.domain.Providers;
 import com.unisys.cws.util.SearchCriteria;
 
@@ -18,16 +18,8 @@ import com.unisys.cws.util.SearchCriteria;
 public class SearchController {
 
 	@Autowired
-	SearchDAO searchDao;
+	ISearchDao searchDao;
 
-	/*@RequestMapping(path = "/find", produces = MediaType.APPLICATION_JSON_VALUE , method = RequestMethod.GET)
-	public List<Providers> findProvidersByCriteria(@RequestParam("providerName") String providerName , @RequestParam("county") long county, 
-			@RequestParam("providerType") long providertype , 
-			@RequestParam("city") long city	, @RequestParam("rating") long rating	) {
-		SearchCriteria searchCriteria = new SearchCriteria(providerName, county, providertype, city,rating);
-		return searchDao.findProvidersByCriteria(searchCriteria);
-	}*/
-	
 	@RequestMapping(path = "/find", produces = MediaType.APPLICATION_JSON_VALUE , method = RequestMethod.GET)
 	public List<Providers> findProvidersByCriteria(@RequestParam(value = "providerName", required = false) String providerName ,
 			@RequestParam(value = "county", required = false) Long county, 

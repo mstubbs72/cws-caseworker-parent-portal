@@ -13,6 +13,10 @@ public class SearchCriteria implements Serializable{
 	Long cityId; 
 	
 	Long ratingId;
+	
+	public SearchCriteria(){
+		
+	}
 
 	public SearchCriteria(String providerName2, Long county, Long providertype, Long city, Long rating) {
 		this.cityId = city;

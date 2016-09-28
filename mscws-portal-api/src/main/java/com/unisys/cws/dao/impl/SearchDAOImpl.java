@@ -1,4 +1,4 @@
-package com.unisys.cws.dao;
+package com.unisys.cws.dao.impl;
 
 import java.util.List;
 
@@ -9,15 +9,13 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.unisys.cws.domain.County;
-import com.unisys.cws.domain.ProviderType;
+import com.unisys.cws.dao.ISearchDao;
 import com.unisys.cws.domain.Providers;
-import com.unisys.cws.domain.QualityRating;
 import com.unisys.cws.util.SearchCriteria;
 
 @Repository
 @Transactional
-public class SearchDAO {
+public class SearchDAOImpl implements ISearchDao{
 
 	@SuppressWarnings("unused")
 	@Autowired
@@ -63,21 +61,8 @@ public class SearchDAO {
 			querySQL.append(" where ");
 			querySQL.append(str);
 		}
-		System.out.println(querySQL);
 		Query query = sessionFactory.getCurrentSession().createQuery(querySQL.toString());
 		return query.list();
-	}
-
-	public List<County> getAllCountys() {
-		return null;
-	}
-
-	public List<ProviderType> getProviderTypes() {
-		return null;
-	}
-
-	public List<QualityRating> getQualityRatings() {
-		return null;
 	}
 
 }
