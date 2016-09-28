@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.unisys.cws.dao.IMetadataDao;
+import com.unisys.cws.dao.MetadataDao;
 import com.unisys.cws.domain.County;
 import com.unisys.cws.domain.ProviderType;
 import com.unisys.cws.domain.QualityRating;
@@ -18,7 +18,7 @@ import com.unisys.cws.domain.QualityRating;
 public class MetadataController {
 
 	@Autowired
-	private IMetadataDao metadataDao; 
+	private MetadataDao metadataDao; 
 	
 	@RequestMapping(path = "/county",produces = MediaType.APPLICATION_JSON_VALUE , method = RequestMethod.GET)
 	public List<County> getCountys(){
