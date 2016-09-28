@@ -2,17 +2,21 @@ package com.unisys.cws.util;
 
 import java.io.Serializable;
 
-public class SearchCriteria implements Serializable{
+public class SearchCriteria implements Serializable {
 
-	Long countyId ;
-	
-	Long providerTypeId; 
-	
-	String providerName; 
-	
-	Long cityId; 
-	
+	Long countyId;
+
+	Long providerTypeId;
+
+	String providerName;
+
+	Long cityId;
+
 	Long ratingId;
+
+	public SearchCriteria() {
+
+	}
 
 	public SearchCriteria(String providerName2, Long county, Long providertype, Long city, Long rating) {
 		this.cityId = city;
@@ -66,7 +70,6 @@ public class SearchCriteria implements Serializable{
 	public String toString() {
 		return "SearchCriteria [countyId=" + countyId + ", providerTypeId=" + providerTypeId + ", providerName="
 				+ providerName + ", cityId=" + cityId + ", ratingId=" + ratingId + "]";
-	} 
-	
-	
+	}
+
 }

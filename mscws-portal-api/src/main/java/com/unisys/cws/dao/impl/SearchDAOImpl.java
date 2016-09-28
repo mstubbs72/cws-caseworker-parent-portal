@@ -1,4 +1,4 @@
-package com.unisys.cws.dao;
+package com.unisys.cws.dao.impl;
 
 import java.util.List;
 
@@ -9,6 +9,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
+import com.unisys.cws.dao.ISearchDAO;
 import com.unisys.cws.domain.County;
 import com.unisys.cws.domain.ProviderType;
 import com.unisys.cws.domain.Providers;
@@ -17,7 +18,7 @@ import com.unisys.cws.util.SearchCriteria;
 
 @Repository
 @Transactional
-public class SearchDAO {
+public class SearchDAOImpl implements ISearchDAO {
 
 	@SuppressWarnings("unused")
 	@Autowired
@@ -30,9 +31,9 @@ public class SearchDAO {
 		if (null != searchCriteria) {
 			if (null != searchCriteria.getProviderName() && !"".equals(searchCriteria.getProviderName())) {
 				if (null != str && !"".equalsIgnoreCase(str))
-					str = str + " and p.providerName = '" + searchCriteria.getProviderName()+"'";
+					str = str + " and p.providerName = '" + searchCriteria.getProviderName() + "'";
 				else
-					str = str + " p.providerName = '" + searchCriteria.getProviderName()+"'";
+					str = str + " p.providerName = '" + searchCriteria.getProviderName() + "'";
 			}
 			if (null != searchCriteria.getCityId()) {
 				if (null != str && !"".equalsIgnoreCase(str))
@@ -59,25 +60,12 @@ public class SearchDAO {
 					str = str + " p.providerType.id = " + searchCriteria.getProviderTypeId();
 			}
 		}
-		if(!"".equals(str)){
+		if (!"".equals(str)) {
 			querySQL.append(" where ");
 			querySQL.append(str);
 		}
-		System.out.println(querySQL);
 		Query query = sessionFactory.getCurrentSession().createQuery(querySQL.toString());
 		return query.list();
-	}
-
-	public List<County> getAllCountys() {
-		return null;
-	}
-
-	public List<ProviderType> getProviderTypes() {
-		return null;
-	}
-
-	public List<QualityRating> getQualityRatings() {
-		return null;
 	}
 
 }
