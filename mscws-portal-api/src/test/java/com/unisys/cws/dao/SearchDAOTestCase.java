@@ -31,7 +31,7 @@ public class SearchDAOTestCase {
 		 SearchCriteria criteria = new SearchCriteria();
 		 criteria.setCountyId(new Long(78));
 		 List providers = searchDao.findProvidersByCriteria(criteria);
-		 Assert.assertEquals(1, providers.size());
+		 Assert.assertEquals(4, providers.size());
 	}
 	
 	@Test
@@ -39,7 +39,7 @@ public class SearchDAOTestCase {
 		 SearchCriteria criteria = new SearchCriteria();
 		 criteria.setProviderTypeId(new Long(3));
 		 List providers = searchDao.findProvidersByCriteria(criteria);
-		 Assert.assertEquals(50, providers.size());
+		 Assert.assertEquals(159, providers.size());
 	}
 
 }

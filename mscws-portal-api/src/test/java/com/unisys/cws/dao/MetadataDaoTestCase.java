@@ -16,16 +16,16 @@ public class MetadataDaoTestCase {
 	
 	@Test
 	public void testGetAllProviderTypes(){
-		Assert.assertNotNull(metadataDao.getAllCountys());
+		Assert.assertEquals(7,(metadataDao.getAllProviderTypes()).size());
 	}
 	
 	@Test
 	public void testGetAllCountys(){
-		Assert.assertNotNull(metadataDao.getAllCountys());	
+		Assert.assertEquals(82,(metadataDao.getAllCountys()).size());	
 	}
 	
 	@Test
 	public void testGetAllRatings(){
-		Assert.assertNotNull(metadataDao.getAllRatings());
+		Assert.assertEquals(6,(metadataDao.getAllRatings()).size());
 	}
 }
