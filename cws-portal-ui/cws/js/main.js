@@ -1,7 +1,7 @@
 /**
  * Main AngularJS Web Application
  */
-var app = angular.module('cwsUnisysApp', ['ngRoute']);
+var app = angular.module('cwsUnisysApp', ['ngRoute', 'angular-input-stars']);
 
 /**
  * Configure the Routes
@@ -10,6 +10,9 @@ app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     // Home
     .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
+	.when("/home", {templateUrl: "partials/home.html", controller: "PageCtrl"})
+	//Advanced Search
+	.when("/advancedSearch", {templateUrl: "partials/advancedSearch.html", controller: "PageCtrl"})
 	//Provider Search
 	.when("/providerSearch", {templateUrl: "partials/providerSearch.html", controller: "PageCtrl"})
     // else 404

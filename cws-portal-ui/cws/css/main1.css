@@ -1,0 +1,173 @@
+/* Global Styles */
+
+html, body {
+    height: 100%;
+}
+body {
+	background-color: #f6f6f8;
+	font-family: Arial !important;
+	color:#6d6d6d;
+}
+.colorGrayCls{
+	color:#b8b7bb;
+}
+.sidebarMinHeight{
+	height:440px;
+}
+.container {
+	width: 100%;
+	max-width: 100%;
+}
+.whiteBackground{
+	background-color: #fff;
+}
+.border0{
+	border: 0px;
+}
+.marginB10{
+	margin-bottom:10px
+}
+.paddingT10{
+	padding-top: 10px;
+}
+.padding4-25{
+    padding: 7px 25px;
+}
+.fontSize25{
+	font-size: 25px;
+}
+.imgLogoMaxWd{
+	max-width: 6em;
+}
+.greenColorBtnCls  {
+    background: #61bd6d;
+    border: 1px solid transparent;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    border-radius: 6px;
+}
+.blueColorBtnCls  {
+    background: rgb(66, 133, 244);
+    border: 1px solid transparent;
+    color: #fff;
+    
+    font-weight: 700;
+    text-align: center;
+    border-radius: 6px;
+}
+
+#sidebar-wrapper {
+	width: 100%;
+}
+#sidebar-wrapper {
+	/*z-index: 10001;
+	position: fixed;
+	height: 80%;
+	padding: 0px 0px 30px 0px;*/
+	background: #fff;
+	overflow-x: hidden;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+.heading-background{
+	background: rgb(66, 133, 244) !important;
+    font-size: 1.428571em;
+}
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
+}
+
+/* Left Sidebar Styles */
+.sidebar-nav {
+	padding: 0;
+	list-style: none;
+}
+
+.sidebar-nav li {
+	line-height: 60px;
+}
+
+.sidebar-nav li a {
+	display: flex;
+	color: #5c5757;
+	line-height: 14px;
+	padding-left: 20px;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+	text-decoration: none;
+}
+
+.sidebar-nav > li > a:hover {
+	background-color: rgba(67, 67, 67, 0.10)
+}
+.sidebar-nav > li > a:focus {
+	background-color: rgba(67, 67, 67, 0.0);
+}
+.sidebar-nav > .sidebar-brand {
+	background: #2a6ebb;
+    text-align: center;
+}
+.sidebar-nav > .sidebar-brand span {
+	color: #fff;
+	font: bold;
+}
+
+.sidebar-nav > .sidebar-brand li > a {
+	text-align: left;
+	border-bottom: 0;
+}
+
+.sidebar-nav > .sidebar-brand li > a:hover {
+	text-align: left;
+}
+
+.sidebar-nav li.active {
+	background-color: rgba(252, 241, 104, 0.46);
+	color: #000;
+}
+
+/* Right Sidebar Styles */
+.right-brand-heading {
+	background: rgb(66, 133, 244);
+	padding-top: 18px;
+	margin: 0;
+	min-height: 60px;
+	color: #fff;
+}		
+.rightHelpClass {
+	/*display: none;
+	position: fixed;*/
+	background: #fff;
+	overflow-y: auto;
+	text-align: center;
+}
+.formProviderClass{
+    font-size: 18px;
+    line-height: 2em;
+}
+.filteredDataCssCls{
+    font-size: 16px;
+    line-height: 2.5em;
+}
+		
+/* Responsive Styles */
+@media (max-width: 994px ) {
+	#filterByDivId, #helpDivId{
+		display: none;
+	}
+}
+@media (max-width: 767px) {
+
+    .carousel {
+        height: 70%;
+        /* increases the carousel height so it looks good on phones */
+    }
+}
+
