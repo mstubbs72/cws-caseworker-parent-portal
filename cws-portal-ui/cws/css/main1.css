@@ -36,6 +36,12 @@ body {
 .fontSize25{
 	font-size: 25px;
 }
+.fontSize18{
+	font-size: 18px;
+}
+.fontSize16{
+	font-size: 16px;
+}
 .imgLogoMaxWd{
 	max-width: 6em;
 }
@@ -55,6 +61,12 @@ body {
     font-weight: 700;
     text-align: center;
     border-radius: 6px;
+}
+.blueColorCls{
+	color: rgb(66, 133, 244);
+}
+.goldColorCls{
+	color: gold;
 }
 
 #sidebar-wrapper {
@@ -154,7 +166,21 @@ body {
 }
 .filteredDataCssCls{
     font-size: 16px;
-    line-height: 2.5em;
+    line-height: 2em;
+}
+
+ .panel-heading a:after {
+	font-family: 'Glyphicons Halflings';
+	content: "\e114";
+	float: right;
+}
+
+.panel-heading a.collapsed:after {
+	content: "\e080";
+}
+
+.panel-group .panel {
+    border: 1px solid #b8b7bb;
 }
 		
 /* Responsive Styles */
