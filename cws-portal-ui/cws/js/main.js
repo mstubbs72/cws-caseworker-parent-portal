@@ -17,6 +17,7 @@ app.config(['$routeProvider', function ($routeProvider) {
 	.when("/providerSearch", {templateUrl: "partials/providerSearch.html", controller: "PageCtrl"})
 	//Star Rating
 	.when("/starRating", {templateUrl: "partials/starRating.html", controller: "PageCtrl"})
+	.when("/bookAppoinment", {templateUrl: "partials/bookAppoinment.html", controller: "PageCtrl"})
     // else 404
     .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
 }]);

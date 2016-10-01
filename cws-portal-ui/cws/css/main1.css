@@ -14,6 +14,9 @@ body {
 .sidebarMinHeight{
 	height:440px;
 }
+.height35{
+	height: 35px;
+}
 .container {
 	width: 100%;
 	max-width: 100%;
@@ -24,8 +27,22 @@ body {
 .border0{
 	border: 0px;
 }
+
 .marginB10{
 	margin-bottom:10px
+}
+.marginB20{
+	margin-bottom:20px
+}
+.marginT30{
+	margin-top:30px
+}
+
+.padding00{
+	padding: 0;
+}
+.padding10{
+	padding:10px
 }
 .paddingT10{
 	padding-top: 10px;
@@ -36,6 +53,9 @@ body {
 .fontSize25{
 	font-size: 25px;
 }
+.fontSize60{
+	font-size: 60px;
+}
 .fontSize18{
 	font-size: 18px;
 }
@@ -45,6 +65,7 @@ body {
 .imgLogoMaxWd{
 	max-width: 6em;
 }
+
 .greenColorBtnCls  {
     background: #61bd6d;
     border: 1px solid transparent;
@@ -54,7 +75,7 @@ body {
     border-radius: 6px;
 }
 .blueColorBtnCls  {
-    background: rgb(66, 133, 244);
+    background: #4285f4;
     border: 1px solid transparent;
     color: #fff;
     
@@ -62,11 +83,26 @@ body {
     text-align: center;
     border-radius: 6px;
 }
+.blueBackgroundColorCls{
+	background: #4285f4;
+}
 .blueColorCls{
-	color: rgb(66, 133, 244);
+	color: #4285f4;
 }
 .goldColorCls{
 	color: gold;
+}
+.whiteColorCls{
+	color:white;
+}
+.customDropDownCls{
+	color: #555;
+    padding: 7px;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
 }
 
 #sidebar-wrapper {
@@ -85,7 +121,7 @@ body {
 	transition: all 0.5s ease;
 }
 .heading-background{
-	background: rgb(66, 133, 244) !important;
+	background: #4285f4 !important;
     font-size: 1.428571em;
 }
 
@@ -147,11 +183,12 @@ body {
 
 /* Right Sidebar Styles */
 .right-brand-heading {
-	background: rgb(66, 133, 244);
+	background: #4285f4;
 	padding-top: 18px;
 	margin: 0;
 	min-height: 60px;
 	color: #fff;
+	font-size: 1.428571em;
 }		
 .rightHelpClass {
 	/*display: none;
@@ -182,12 +219,31 @@ body {
 .panel-group .panel {
     border: 1px solid #b8b7bb;
 }
+
+.modal{
+	top: 20%;
+}
+.modal-dialog{
+	width:60%;
+}
 		
 /* Responsive Styles */
+@media (min-width: 994px ) {
+	.btnMaxWidth160{
+		max-width: 160px;
+	}
+}
 @media (max-width: 994px ) {
 	#filterByDivId, #helpDivId{
 		display: none;
 	}
+	.modal-dialog{
+		width:100%;
+	}
+	.modal{
+		top: 0
+	}
+	
 }
 @media (max-width: 767px) {
 
