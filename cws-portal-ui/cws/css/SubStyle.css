@@ -148,7 +148,7 @@ p
 }
 .AdvSchHandicapPartInfo
 {
-    border-bottom: 1px solid #f2f2f2;
+    /*border-bottom: 1px solid #f2f2f2;*/
     padding-bottom: 5px;
 }
 .AdvSchHandicapPartInfo h4
@@ -165,7 +165,7 @@ p
 }
 .AdvSchAgeGroupPartInfo
 {
-    border-bottom: 1px solid #f2f2f2;
+    /*border-bottom: 1px solid #f2f2f2;*/
     padding-bottom: 20px;
 }
 .AdvSchAgeGroupPartInfo h4
@@ -222,33 +222,15 @@ p
 }
 .AdvSchSpcNeedsInfo
 {
-    border-bottom: 1px solid #f2f2f2;
     padding-bottom: 15px;
 }
 .AdvSchSpcNeedsInfo h4
 {
     color: #666666;
-    font-weight: 700;
     margin-bottom: 15px;
     line-height: 25px;
 }
-.SpecialNeedsListPart p
-{
-    font-size: 16px;
-    font-style: italic;
-    color: #666666;
-    text-align: center;
-}
-.SpecialNeedsListBox
-{
-    border: 1px solid #dddddd;
-    padding: 5px 10px;
-}
-.SpecialNeedsListBox ul
-{
-    padding: 0;
-    list-style-type: none;
-}
+
 .SpecialNeedsBtnPart
 {
     padding-top: 35px;

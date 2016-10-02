@@ -9,17 +9,18 @@ var app = angular.module('cwsUnisysApp', ['ngRoute', 'angular-input-stars', 'ngM
 app.config(['$routeProvider', function ($routeProvider) {
   $routeProvider
     // Home
-    .when("/", {templateUrl: "partials/home.html", controller: "PageCtrl"})
-	.when("/home", {templateUrl: "partials/home.html", controller: "PageCtrl"})
+    .when("/", {templateUrl: "partials/search.html", controller: "PageCtrl"})
+	.when("/search", {templateUrl: "partials/search.html", controller: "PageCtrl"})
 	//Advanced Search
 	.when("/advancedSearch", {templateUrl: "partials/advancedSearch.html", controller: "PageCtrl"})
 	//Provider Search
 	.when("/providerSearch", {templateUrl: "partials/providerSearch.html", controller: "PageCtrl"})
 	//Star Rating
 	.when("/starRating", {templateUrl: "partials/starRating.html", controller: "PageCtrl"})
-	.when("/bookAppoinment", {templateUrl: "partials/bookAppoinment.html", controller: "PageCtrl"})
-    // else 404
-    .otherwise("/404", {templateUrl: "partials/404.html", controller: "PageCtrl"});
+	.when("/bookAppointment", {templateUrl: "partials/bookAppointment.html", controller: "PageCtrl"})
+	.when("/moreDetails", {templateUrl: "partials/moreDetails.html", controller: "PageCtrl"})
+	// else 404
+    .otherwise("/search", {templateUrl: "partials/search.html", controller: "PageCtrl"});
 }]);
 
 
