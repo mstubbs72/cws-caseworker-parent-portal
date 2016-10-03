@@ -1,0 +1,367 @@
+<div class="container-fluid">
+  <div class="row" ng-controller="SearchController">
+   <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
+	<h4 class="col-xs-8" ng-show="error"> <strong> Atlease one criteria needs to be selected to perform search</strong>	 </h4>
+  </div>
+	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">		
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 whiteBackground marginB10 paddingT10">
+			
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+				<form class="form-horizontal formProviderClass">
+					 <div class="form-group">
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+							<strong> County : </strong>
+								<select class="selectpicker border0"id="County"
+							ng-model="searchCriteria.countyId" ng-options="c as c.countyName for c in countys track by c.countyNumber" >
+                             </select>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+							<strong> City : </strong>
+							<select class="selectpicker border0" id="city"
+							ng-model="searchCriteria.cityId" ng-options="c as c.name for c in cities track by c.id">
+						    </select>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+							<strong> Quality Star Rating : </strong>
+							<select class="selectpicker border0" id="quality"
+							ng-model="searchCriteria.ratingId" ng-options="c as c.qualityRatingDescription for c in qualityRatings track by c.qualityRating">
+							</select>
+						</div>
+						<div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+							<strong> Provider Type : </strong>
+							<select class="selectpicker border0" id="providerType"
+							ng-model="searchCriteria.providerTypeId" ng-options="c as c.providerTypeDescription for c in providerTypes track by c.providerType">  
+							</select>
+						</div>
+						<div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+							<label for="providerNameId" class="col-lg-3 col-md-4 col-sm-6 col-xs-6" style="padding:0;">Provider Name :</label>
+							<div class="col-lg-6 col-md-8 col-sm-6 col-xs-6">
+							  <input type="text" class="form-control" id="providerNameId" placeholder="Provider Name">
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<a class="col-md-offset-4 col-md-3 col-xs-12 text-center marginB10">Advance Search</a>
+						<div class="col-md-1 col-xs-12 text-center marginB10">
+							<i class="fa fa-sort-alpha-asc fontSize25" aria-hidden="true"></i>
+						</div>
+						<div class="col-md-2 col-xs-12 text-center marginB10">
+							<button type="submit" class="col-xs-12 btn blueColorBtnCls padding4-25 btnMaxWidth160" ng-click="reset()">Reset</button>
+						</div>
+						<div class="col-md-2 col-xs-12 marginB10">
+							<button type="submit" class="col-xs-12 btn greenColorBtnCls padding4-25 btnMaxWidth160" ng-click="search()">Search</button>
+						</div>
+					</div>
+					
+				</form> 
+			</div>
+			<div class="clearfix visible-xs-block"></div>			
+		</div>
+		
+	</div>
+   <div ng-show="tableVisible">
+	<div id="filterByDivId" class="col-lg-2 col-md-3 col-sm-3 col-xs-3" >
+	
+		<div id="sidebar-wrapper">
+			<ul class="sidebar-nav nav sidebarMinHeight">
+				<li class="sidebar-brand heading-background">
+					<span>Filter By</span>
+				</li>
+				<li>
+					<a>License Status</a>
+					<select class="selectpicker border0" id="providerTypeFlr"
+							ng-model="filtertype"
+							ng-options="c as c.providerTypeDescription for c in providerTypes track by c.providerType">  
+							</select>
+				</li>
+				<li>
+				 <a>Rating</a>
+					<select class="selectpicker border0" id="ratingFlr"
+							ng-model="resultsFilter.rating"
+							ng-model="searchCriteria.ratingId" ng-options="c as c.qualityRatingDescription for c in qualityRatings track by c.qualityRating">  
+							</select>
+				</li>
+				<li>
+					<a>License Status</a>
+					<select class="selectpicker border0" id="licenseFlr"
+							ng-model="licenseFilter">
+								<option value="LICENSED">LICENSED</option>
+								<option value="UNLICENSED">UNLICENSED</option>
+							</select>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="col-lg-8 col-md-6 col-sm-12 col-xs-12" ng-show="mapToggle">
+	 <div class="col-xs-12">
+	<div class="col-xs-8">
+	<pagination 
+      ng-model="currentPage"
+      total-items="providers.length"
+      max-size="maxSize"  
+      boundary-links="true">
+    </pagination>
+	</div>
+	<div class="col-xs-4"> 
+	 Total {{providers.size()}} results found. <br>
+	<button class="btn pull-right fontSize18" style="background: transparent;" ng-click="mapViewFunc();" ng-show="mapToggle"><i class="fa fa-map" aria-hidden="true"></i> Map View</button>
+	<button class="btn  pull-right fontSize18" style="background: transparent;" ng-click="listViewFunc();" ng-show="listToggle"><i class="fa fa-list" aria-hidden="true"></i> List View</button>
+	</div>
+	</div>
+	<div class="col-xs-12 marginB10 whiteBackground" ng-repeat="provider in filteredProviders track by provider.id">		
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6">
+				<div class="text-center">
+					<h4 > <b>{{provider.providerName}}</b> </h4>
+				</div>
+				<div class="text-center">
+					<img src="img/person_blank.png" class="imgLogoMaxWd">
+				</div>
+				<div class="text-center">
+					<input-stars max="{{(provider.qualityRating.qualityRating)-1}}" on-star-click="runMyFunction()" ng-model="YourCtrl.property"></input-stars>
+					<strong> ({{provider.qualityRating.qualityRatingDescription}})</strong>
+				</div>
+				<div class="text-center">
+					<strong> {{provider.licenseType}} </strong>
+				</div>
+			
+			</div>
+			<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 marginB10 paddingT10 filteredDataCssCls">
+			<div>
+			     <strong> Provider Type : </strong><span> {{provider.providerType.providerTypeDescription}} </span></div>
+				<div><strong> Phone Number : </strong><span> {{provider.phoneNumber}}</span></div>			
+				<div><strong> City : </strong><span> {{provider.physicalCity.name}} </span></div>
+				<div><strong> Zip Code : </strong><span> {{provider.physicalZipCode}} </span></div>			
+				<div><strong> Capacity : </strong><span> {{provider.providerCapacity}} </span></div>		
+			</div>
+			
+			<div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 text-right">
+				<div class="col-lg-offset-6 col-lg-3 col-md-offset-6 col-md-3 col-sm-offset-8 col-sm-2 col-xs-offset-8 col-xs-2 marginB10 paddingT10">
+					<a ><span class="glyphicon glyphicon-map-marker fontSize25 colorGrayCls"></span></a>
+				</div>
+				<div class="col-lg-3 col-md-3 col-sm-2 col-xs-2 marginB10 paddingT10">
+					<a data-toggle="modal" data-target="#modal-transparent1"><span class="glyphicon glyphicon-envelope fontSize25 colorGrayCls"></span></a>
+				</div>
+				<button type="button" class="col-xs-12 marginB10 btn blueColorBtnCls">More Details</button>
+				<a class="col-xs-12 marginB10 btn blueColorBtnCls" data-toggle="modal" data-target="#modal-transparent3">Book Appointment</a>
+			</div>
+		
+		</div>
+		
+	<div class="col-xs-12">
+	 <pagination 
+      ng-model="currentPage"
+      total-items="providers.length"
+      max-size="maxSize"  
+      boundary-links="true">
+    </pagination>
+	</div>	
+		 	</div>
+
+	<div class="col-lg-8 col-md-6 col-sm-12 col-xs-12" ng-show="listToggle">
+	<div class="col-xs-12">
+	<div class="col-xs-8">
+	 </div>
+	<div class="col-xs-4"> 
+	<button class="btn pull-right fontSize18" style="background: transparent;" ng-click="mapViewFunc();" ng-show="mapToggle"><i class="fa fa-map" aria-hidden="true"></i> Map View</button>
+	<button class="btn  pull-right fontSize18" style="background: transparent;" ng-click="listViewFunc();" ng-show="listToggle"><i class="fa fa-list" aria-hidden="true"></i> List View</button>
+	</div>
+	</div>
+	
+		  <ng-map center="[40.74, -74.18]" style="height: 440px;"></ng-map>  
+	</div>
+	
+	<div id="helpDivId" class="col-lg-2 col-md-3 col-sm-3 col-xs-3">
+			<div id="accordionPanel1OneHelp" class="instClass rightHelpClass sidebarMinHeight">
+				<h3 class="right-brand-heading">Help</h3>
+				<div class="text-left" style="padding-left:5px">
+					<b><div class="marginB10 paddingT10"><a href="#/starRating"> Learn about Star Ratings</a></div>
+					<div class="marginB10"><a class="paddingT10" > Provider Type Description</a> </div></b>
+
+				</div>
+			</div>
+	</div>
+	</div>
+	</div>
+</div>
+
+
+<!-- Email Modal -->
+<div class="modal modal-transparent fade" id="modal-transparent1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="col-xs-12 modal-content padding00">
+		<div class="col-xs-12 padding00 blueBackgroundColorCls marginB10">
+			<label class="col-sm-11 col-xs-10 padding10 whiteColorCls fontSize18 ">Compose Message</label>
+			<i onclick="funcCancel()" class="col-sm-1 col-xs-2 padding10 whiteColorCls fa fa-times fontSize25 text-center" aria-hidden="true"></i>
+		</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+			<form class="form-horizontal">
+			  <div class="form-group">
+				<label class="col-md-offset-1 col-md-2 col-xs-12">From:</label>
+				<div class="col-md-6 col-xs-11">
+					<input type="text" class="form-control">
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label class="col-md-offset-1 col-md-2 col-xs-12">To:</label>
+				<div class="col-md-6 col-xs-11">
+					<input type="text" class="form-control">
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label class="col-md-offset-1 col-md-2 col-xs-12">Subject:</label>
+				<div class="col-md-6 col-xs-11">
+					<input type="text" class="form-control">
+				</div>
+			  </div>
+			  <div class="form-group">
+				<label class="col-md-offset-1 col-md-2 col-xs-12">Message:</label>
+				<div class="col-md-6 col-xs-11">
+					<textarea rows="3" class="form-control"></textarea>
+				</div>
+			  </div>
+			  <button onclick="funcCancel()" type="button" class="col-sm-offset-1 col-sm-3 col-xs-offset-2 col-xs-8 marginB10 btn blueColorBtnCls">Save as Draft</button>
+			  <button onclick="funcCancel()" type="button" class="col-sm-offset-1 col-sm-3 col-xs-offset-2 col-xs-8 marginB10 btn blueColorBtnCls">Cancel</button>
+			  <button data-toggle="modal" data-target="#modal-transparent2" onclick="funcSave()" type="button" class="col-sm-offset-1 col-sm-3 col-xs-offset-2 col-xs-8 marginB10 btn blueColorBtnCls">Save</button>
+			</form>
+		</div>
+	
+    </div>
+  </div>
+</div>
+
+<!-- Email Modal -->
+<div class="modal fade" id="modal-transparent2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="col-xs-12 modal-content padding00">
+		<div class="col-xs-12 padding00 blueBackgroundColorCls marginB10">
+			<label class="col-sm-11 col-xs-10 padding10 whiteColorCls fontSize18 ">Email Sent Successfully</label>
+			<i onclick="funcCancel()" class="col-sm-1 col-xs-2 padding10 whiteColorCls fa fa-times fontSize25 text-center" aria-hidden="true"></i>
+		</div>
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<div class="col-xs-12">
+				<i class="col-xs-12 marginT30 padding10 fa fa-envelope-square fontSize60 text-center"></i>
+			</div>
+			<button onclick="funcCancel()" type="button" class="col-sm-offset-9 col-sm-3 col-xs-offset-2 col-xs-8 marginB10 btn blueColorBtnCls">Ok</button>
+		</div>
+	
+    </div>
+  </div>
+</div>
+<!-- Book Appointment-->
+<div class="modal fade" id="modal-transparent3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+  	<div class="row whiteBackground fontSize16">
+	<h3 class="col-xs-12"> <b> Book an Appoinment </b> </h3>
+	<h4 class="col-xs-12"> <i> Please fill in the details below (All fields are Mandatory) </i> </h4>
+	
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<form class="form-horizontal">
+			  <div class="form-group marginB20 marginT30">
+				<label class="col-md-offset-1 col-md-2 col-xs-12">First Name</label>
+				<div class="col-md-3 col-xs-11 marginB20">
+					<input type="text" class="form-control">
+				</div>
+				<label class="col-md-offset-1 col-md-2 col-xs-12">Last Name</label>
+				<div class=" col-md-3 col-xs-11 marginB20">
+					<input type="text" class="form-control">
+				</div>
+			  </div>
+			  <div class="form-group marginT30">
+				<label class="col-md-offset-1 col-md-2 col-xs-12">Address</label>
+				<div class="col-md-9 col-xs-11 marginB20">
+					<input type="text" class="form-control">
+				</div>
+				<div class="col-md-offset-3 col-md-3 col-xs-11 marginB20">
+					<select class="col-xs-12 selectpicker customDropDownCls" title="City">
+						  <option>option1</option>
+						  <option>option2</option>
+						  <option>option3</option>
+					</select>
+				</div>
+				<div class="col-md-offset-3 col-md-3 col-xs-11 marginB20">
+					<select class="col-xs-12 selectpicker customDropDownCls" title="County">
+						  <option>option1</option>
+						  <option>option2</option>
+						  <option>option3</option>
+					</select>
+				</div>
+				<div class="col-md-offset-3 col-md-3 col-xs-11 marginB20">
+					<select class="col-xs-12 selectpicker customDropDownCls" title="State">
+						  <option>option1</option>
+						  <option>option2</option>
+						  <option>option3</option>
+					</select>
+				</div>
+				<div class="col-md-offset-3 col-md-3 col-xs-11 marginB20">
+					<input type="text" class="form-control" placeholder="Zip Code">
+				</div>
+			  </div>
+			  <div class="form-group marginT30">
+				<label class="col-md-offset-1 col-md-2 col-xs-12">Email Id</label>
+				<div class="col-md-3 col-xs-11 marginB20">
+					<input type="text" class="form-control">
+				</div>
+				<label class="col-md-offset-1 col-md-2 col-xs-12">Telephone Number</label>
+				<div class=" col-md-3 col-xs-11 marginB20">
+					<input type="text" class="form-control">
+				</div>
+			  </div>
+			  <hr>
+			  <div class="form-group marginT30">
+				<label class="col-md-offset-1 col-md-2 col-xs-12">Choose Date</label>
+				<div class="col-md-3 col-xs-11 marginB20">
+					<div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+				</div>
+				<label class="col-md-offset-1 col-md-2 col-xs-12">Number of Children</label>
+				<div class=" col-md-3 col-xs-11 marginB20">
+					<select class="col-xs-12 selectpicker customDropDownCls">
+						  <option>option1</option>
+						  <option>option2</option>
+						  <option>option3</option>
+					</select>
+				</div>
+			  </div>
+			  <div class=" col-sx-12 marginT30">
+				  <button onclick="funcCancel()" type="button" class="col-sm-offset-1 col-sm-3 col-xs-offset-2 col-xs-8 marginB10 btn blueColorBtnCls">Reset</button>
+				  <button onclick="funcCancel()" type="button" class="col-sm-offset-1 col-sm-3 col-xs-offset-2 col-xs-8 marginB10 btn blueColorBtnCls">Cancel</button>
+				  <button data-toggle="modal" data-target="#modal-transparent2" onclick="funcSave()" type="button" class="col-sm-offset-1 col-sm-3 col-xs-offset-2 col-xs-8 marginB10 btn blueColorBtnCls">Request Appointment</button>
+			</form>
+			</div>
+		</div>
+	</div>
+</div>
+ 
+
+  </div>
+  </div>
+
+
+<script>
+
+$(".modal-transparent").on('show.bs.modal', function () {
+  setTimeout( function() {
+    $(".modal-backdrop").addClass("modal-backdrop-transparent");
+  }, 3000);
+});
+$(".modal-transparent").on('hidden.bs.modal', function () {
+  $(".modal-backdrop").addClass("modal-backdrop-transparent");
+});
+function funcSave(){
+	$('#modal-transparent1').modal('hide');
+}
+function funcCancel(){
+console.log($('.modal'));
+console.log($('#modal-transparent1'));
+	$('.modal').modal('hide');
+}
+</script>
+
+    
+    

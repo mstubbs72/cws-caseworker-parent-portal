@@ -14,6 +14,9 @@ body {
 .sidebarMinHeight{
 	height:440px;
 }
+.height35{
+	height: 35px;
+}
 .container {
 	width: 100%;
 	max-width: 100%;
@@ -21,11 +24,43 @@ body {
 .whiteBackground{
 	background-color: #fff;
 }
+.grayBackground{
+	background-color: #f6f6f8;
+}
 .border0{
 	border: 0px;
 }
+.borderRadius20{
+	border-radius: 20px;
+}
+
 .marginB10{
 	margin-bottom:10px
+}
+.marginB20{
+	margin-bottom:20px
+}
+.marginT20{
+	margin-top:20px
+}
+.marginT30{
+	margin-top:30px
+}
+.marginL15{
+	margin-left:15px
+}
+.marginR15{
+	margin-right:15px
+}
+.marginL0{
+	margin-left: 0px !important;
+}
+
+.padding00{
+	padding: 0;
+}
+.padding10{
+	padding:10px
 }
 .paddingT10{
 	padding-top: 10px;
@@ -36,9 +71,22 @@ body {
 .fontSize25{
 	font-size: 25px;
 }
+.fontSize60{
+	font-size: 60px;
+}
+.fontSize18{
+	font-size: 18px;
+}
+.fontSize16{
+	font-size: 16px;
+}
+.headerFontSize{
+	font-size: 25px;
+}
 .imgLogoMaxWd{
 	max-width: 6em;
 }
+
 .greenColorBtnCls  {
     background: #61bd6d;
     border: 1px solid transparent;
@@ -48,13 +96,48 @@ body {
     border-radius: 6px;
 }
 .blueColorBtnCls  {
-    background: rgb(66, 133, 244);
+    background: #4285f4;
     border: 1px solid transparent;
     color: #fff;
     
     font-weight: 700;
     text-align: center;
     border-radius: 6px;
+}
+.blueBackgroundColorCls{
+	background: #4285f4;
+}
+.blueColorCls{
+	color: #4285f4;
+}
+.blue2ColorCls{
+	color: #5183d6
+}
+.blue3ColorCls{
+	color: #437bd8;
+}
+.goldColorCls{
+	color: gold;
+}
+.whiteColorCls{
+	color:white;
+}
+.greenColorCls{
+	color:green;
+}
+.customDropDownCls{
+	color: #555;
+    padding: 7px;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
+.customSearchCls{
+	padding: 22px;
+    background: #f1f0f5;
+    border-radius: 20px;
 }
 
 #sidebar-wrapper {
@@ -73,7 +156,7 @@ body {
 	transition: all 0.5s ease;
 }
 .heading-background{
-	background: rgb(66, 133, 244) !important;
+	background: #4285f4 !important;
     font-size: 1.428571em;
 }
 
@@ -135,11 +218,12 @@ body {
 
 /* Right Sidebar Styles */
 .right-brand-heading {
-	background: rgb(66, 133, 244);
+	background: #4285f4;
 	padding-top: 18px;
 	margin: 0;
 	min-height: 60px;
 	color: #fff;
+	font-size: 1.428571em;
 }		
 .rightHelpClass {
 	/*display: none;
@@ -154,13 +238,111 @@ body {
 }
 .filteredDataCssCls{
     font-size: 16px;
-    line-height: 2.5em;
+    line-height: 2em;
+}
+.panel-heading b {
+	margin-right:-20px
+}
+.panel-heading a:after {
+	font-family: 'Glyphicons Halflings';
+	content: "\e114";
+	float: right;
+}
+
+.panel-heading a.collapsed:after {
+	content: "\e080";
+}
+
+.advanceSearchTxtCls a:after {
+    font-family: 'Glyphicons Halflings';
+    content: "\e114";
+    margin-left: 40px;
+    vertical-align: middle;
+	float:none;
+}
+.advanceSearchTxtCls a.collapsed:after {
+	content: "\e080";
+}
+
+.advanceSearchTxtCls a:focus, .advanceSearchTxtCls a:hover {
+    text-decoration: none;
+}
+.panel-group .panel {
+    border: 1px solid #b8b7bb;
+}
+
+.modal{
+	top: 20%;
+}
+.modal-dialog{
+	width:60%;
+}
+
+.items-collection{
+    margin:20px 0 0 0;
+}
+.items-collection label.btn-default.active{
+    background-color: #4285f4;
+    color:#FFF;
+}
+.items-collection label.btn-default{
+    width:100%;
+    border:1px solid #305891;
+    margin:5px; 
+    border-radius: 17px;
+    color: #305891;
+}
+.items-collection label .itemcontent{
+    width:100%;
+}
+.items-collection .btn-group{
+    width:100%
+}
+
+.slider.slider-horizontal .slider-selection{
+	background-color: white;
+	background-image: linear-gradient(to bottom,#ffffff 0,#ffffff 100%);
+}
+.posFixCls{
+	position:fixed;
+	z-index:1000;
+}
+.headerCss{
+	top: 0;
+	white-space:pre-line;
+}
+.footerCss{
+	bottom:0;
+	padding:6px
 }
 		
 /* Responsive Styles */
-@media (max-width: 994px ) {
-	#filterByDivId, #helpDivId{
+@media (min-width: 994px ) {
+	.btnMaxWidth160{
+		max-width: 160px;
+	}
+	.btnMaxWidth260{
+		max-width: 260px;
+	}
+	#filterTypeId, #moreDetailsNameId{
 		display: none;
+	}
+}
+@media (max-width: 994px ) {
+	#filterByDivId, #helpDivId, #moreDetailsNameId2{
+		display: none;
+	}
+	.modal-dialog{
+		width:100%;
+	}
+	.modal{
+		top: 0
+	}
+	#filterTypeId, #moreDetailsNameId{
+		display: block;
+	}
+	.headerFontSize{
+		font-size: 17px;
 	}
 }
 @media (max-width: 767px) {

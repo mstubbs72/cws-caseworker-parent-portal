@@ -14,7 +14,10 @@
     "test",
     "tests"
   ],
-  "directory":"lib",
-  "strict-ssl": false, 
-  "https-proxy": ""
+  "directory": "lib",
+  "strict-ssl": false,
+  "https-proxy": "",
+  "dependencies": {
+    "eonasdan-bootstrap-datetimepicker": "^4.17.42"
+  }
 }

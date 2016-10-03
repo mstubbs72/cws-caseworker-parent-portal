@@ -1,0 +1,255 @@
+<div class="container-fluid">
+	<div class="row whiteBackground fontSize16 text-center">
+	<h3 class="col-xs-12"> <b> Search For Childcare Providers </b> </h3>
+	<h4 class="col-xs-12"> <i> (Select the parameters from dropdown and hit search) </i> </h4>
+	
+		<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+			<form class="form-horizontal">
+				<div class="form-group marginB20 marginT30">
+					<div class="col-md-offset-2 col-md-2 col-xs-6 marginB20">
+						<select class="col-xs-12 selectpicker customDropDownCls" title="County">
+							<option value="" selected disabled>County</option>
+							<option>option1</option>
+							<option>option2</option>
+							<option>option3</option>
+						</select>
+						
+					</div>
+					<div class="col-md-2 col-xs-6 marginB20">
+						<select class="col-xs-12 selectpicker customDropDownCls" title="City">
+							<option value="" selected disabled>City</option>
+							<option>option1</option>
+							<option>option2</option>
+							<option>option3</option>
+						</select>
+					</div>
+					<div class="col-md-2 col-xs-6 marginB20">
+						<select class="col-xs-12 selectpicker customDropDownCls" title="Provider Type">
+							<option value="" selected disabled>Provider Type</option>
+							<option>option1</option>
+							<option>option2</option>
+							<option>option3</option>
+						</select>
+					</div>
+					<div class="col-md-2 col-xs-6 marginB20">
+						<select class="col-xs-12 selectpicker customDropDownCls" title="Provider Type">
+							<option value="" selected disabled>Quality Star Rating</option>
+							<option>option1</option>
+							<option>option2</option>
+							<option>option3</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group marginT30">
+					<div class="col-md-offset-2 col-md-8 marginB20">
+						<input type="search" id="search" value="" class="form-control customSearchCls" placeholder="Search By Provider Name">
+					</div>
+				</div>
+				  
+				<div class="form-group marginT30">
+					<label class="col-md-offset-3 col-md-2 col-xs-12">Show results in</label>
+					<div class="col-md-4 col-xs-12 marginB20">
+						<label class="col-md-5 radio-inline" style="padding-top:0;"><input type="radio" name="optShowResult">List View</label>
+						<label class="col-md-5 radio-inline" style="padding-top:0;"><input type="radio" name="optShowResult">Map View</label>
+					</div>
+				</div>
+				<div class="col-md-offset-4 col-md-8 col-sm-offset-2 col-sm-10 col-sx-12 marginT10">
+					<div class="col-md-3 col-sm-5 col-xs-12 text-center marginB10">
+						<button type="submit" class="col-xs-12 btn blueColorBtnCls padding4-25 btnMaxWidth160">Reset</button>
+					</div>
+					<div class="col-md-3 col-sm-5 col-xs-12 marginB10">
+						<a type="submit" href="#/providerSearch" class="col-xs-12 btn greenColorBtnCls padding4-25 btnMaxWidth160">Search</a>
+					</div>
+				</div>	
+			</form>
+		</div>
+		
+		<div class="col-xs-12">
+			<div class="panel-heading advanceSearchTxtCls blueColorCls marginT30">
+				<h4 class="col-sm-offset-4 col-sm-4 panel-title custom-panel-header-color">
+					<a name="#advanceSearchGroup" class="collapsed"><b class="">Advance Search</b></a>
+				</h4>
+				<div class="clearfix"></div>
+			</div>
+			<div id="advanceSearchGroup" class="panel-collapse collapse">
+				<div class="panel-body custom-panel-body">
+					<div class="col-xs-12 AdvSchHandicapPart text-left grayBackground borderRadius20">
+						<div class="col-sm-12 col-md-6 AdvSchHandicapPartInfo">
+							<div class="col-sm-6">
+								<label class="marginT30 marginL0"><b>Handicapped Accessibility required?</b></label>
+								<p><input type="radio" name="handicappedRadio"><label>Yes</label></p>
+								<p><input type="radio" name="handicappedRadio"><label>No</label></p>
+							</div>
+							<div class="col-sm-6">
+								<label class="marginT30 marginL0"><b>Time of Service Preferred</b></label>
+								<p><input type="radio" name="servicePRadio"><label>Full Time</label></p>
+								<p><input type="radio" name="servicePRadio"><label>Part Time</label></p>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6">
+							<div class="col-sm-12">
+								<label class="marginT30 marginL0"><b>Age Group</b></label>
+								<div class="marginT10">
+									<b class="marginR15">0</b><input id="ex2" type="text" class="span2 " value="" data-slider-min="0" data-slider-max="216" data-slider-step="1" data-slider-value="[0,216]"/> <b class="marginL15">216</b> <span class=""><i>(Age in months)</i></span> </br>
+								</div>
+								<label class="marginT10">Age : </label>  <span id="ageyearId" class="marginT15"></span></br>
+							</div>	
+						</div>
+						
+						<div class="col-xs-12 text-left">
+							<div class="col-xs-12 AdvSchSpcNeedsInfo">
+								<label class="marginT10"><b>Special Needs </b></label><span>(Click to highlight the selections)</span>
+								<div class="col-xs-12">
+									
+									<div class="form-group">
+										<div class="items-collection">
+
+											<div class="items col-xs-12 col-sm-6 col-md-4 col-lg-3">
+												<div class="info-block block-info clearfix">
+													<div data-toggle="buttons" class="btn-group bizmoduleselect">
+														<label class="btn btn-default">
+															<div class="itemcontent">
+																<input type="checkbox" name="var_id[]" autocomplete="off" value="">
+																<h5>Emotionally Disturbed</h5>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="items col-xs-12 col-sm-6 col-md-4 col-lg-3">
+												<div class="info-block block-info clearfix">
+													<div data-toggle="buttons" class="btn-group itemcontent">
+														<label class="btn btn-default">
+															<div class="itemcontent">
+																<input type="checkbox" name="var_id[]" autocomplete="off" value="">
+																<h5>Emotionally Impaired</h5>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="items col-xs-12 col-sm-6 col-md-4 col-lg-3">
+												<div class="info-block block-info clearfix">
+													<div data-toggle="buttons" class="btn-group itemcontent">
+														<label class="btn btn-default">
+															<div class="itemcontent">
+																<input type="checkbox" name="var_id[]" autocomplete="off" value="">
+																<h5>Hearing Impaired</h5>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="items col-xs-12 col-sm-6 col-md-4 col-lg-3">
+												<div class="info-block block-info clearfix">
+													<div data-toggle="buttons" class="btn-group itemcontent">
+														<label class="btn btn-default">
+															<div class="itemcontent">
+																<input type="checkbox" name="var_id[]" autocomplete="off" value="">
+																<h5>Mentally Impaired</h5>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="items col-xs-12 col-sm-6 col-md-4 col-lg-3">
+												<div class="info-block block-info clearfix">
+													<div data-toggle="buttons" class="btn-group itemcontent">
+														<label class="btn btn-default">
+															<div class="itemcontent">
+																<input type="checkbox" name="var_id[]" autocomplete="off" value="">
+																<h5>Emotionally Impaired</h5>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>                
+											<div class="items col-xs-12 col-sm-6 col-md-4 col-lg-3">
+												<div class="info-block block-info clearfix">
+													<div data-toggle="buttons" class="btn-group itemcontent">
+														<label class="btn btn-default">
+															<div class="itemcontent">
+																<input type="checkbox" name="var_id[]" autocomplete="off" value="">
+																<h5>Hearing Impaired</h5>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>                
+											<div class="items col-xs-12 col-sm-6 col-md-4 col-lg-3">
+												<div class="info-block block-info clearfix">
+													<div data-toggle="buttons" class="btn-group itemcontent">
+														<label class="btn btn-default">
+															<div class="itemcontent">
+																<input type="checkbox" name="var_id[]" autocomplete="off" value="">
+																<h5>Mentally Impaired</h5>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>                
+											<div class="items col-xs-12 col-sm-6 col-md-4 col-lg-3">
+												<div class="info-block block-info clearfix">
+													<div data-toggle="buttons" class="btn-group itemcontent">
+														<label class="btn btn-default">
+															<div class="itemcontent">
+																<input type="checkbox" name="var_id[]" autocomplete="off" value="">
+																<h5>Intellectual Disability</h5>
+															</div>
+														</label>
+													</div>
+												</div>
+											</div>                
+
+										</div>
+									</div>
+								
+								</div>
+							</div>
+						</div>
+						
+						<div class="col-md-offset-8 col-md-4 col-sx-12 marginT10">
+							<div class="col-sm-6 col-xs-12 text-center marginB10">
+								<button type="submit" class="col-xs-12 btn blueColorBtnCls padding4-25 btnMaxWidth160">Reset</button>
+							</div>
+							<div class="col-sm-6 col-xs-12 marginB10">
+								<button type="submit" class="col-xs-12 btn greenColorBtnCls padding4-25 btnMaxWidth160">Search</button>
+							</div>
+						</div>	
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ 
+<script type="text/javascript">
+	$(function () {
+		$('#datetimepicker1').datetimepicker();
+		
+		$('.panel-heading a[name^="#"]').click(function (e) {
+            $("#" + $(this)[0].name.split('#')[1]).collapse('toggle');
+            if ($(this).hasClass('collapsed')) {
+                $(this).removeClass('collapsed');
+            } else {
+                $(this).addClass('collapsed');
+            }
+        });
+		
+		$('#ex2').slider({
+			formatter: function(value) {
+					if(typeof (value) === "object"){
+					console.log(value);
+					var initialVal = value[0]/12;
+					var finalVal = value[1]/12;
+					$('#ageyearId').text(Math.floor(value[0]/12) + "year/s " +value[0]%12+ " month/s" + " to " + Math.floor(value[1]/12) + " year/s " +value[1]%12+ " month/s");
+					}
+					return 'Current value: ' + value;
+			}
+		});
+		
+	});
+	
+	
+</script>
