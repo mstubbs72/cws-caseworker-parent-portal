@@ -131,6 +131,11 @@
 	</scm>
 
 	<distributionManagement>
+		<snapshotRepository>
+        <id>mscws-portal</id>
+        <name>Internal Snapshots</name>
+        <url>http://ustr-erl-7965:8081/nexus/content/repositories/snapshots/</url>
+    </snapshotRepository>
 		<repository>
 			<id>mscws-portal</id>
 			<url>http://ustr-erl-7965:8081/nexus/content/repositories/mscws-portal</url>
