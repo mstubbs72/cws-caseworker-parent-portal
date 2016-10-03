@@ -42,4 +42,56 @@ public class SearchDAOTestCase {
 		 Assert.assertEquals(159, providers.size());
 	}
 
+	@Test
+	public void testFindProvidersByQualityRating0() {
+		 SearchCriteria criteria = new SearchCriteria();
+		 criteria.setRatingId(new Long(1));
+		 List providers = searchDao.findProvidersByCriteria(criteria);
+		 Assert.assertNotSame(0, providers.size());
+	}
+	
+	@Test
+	public void testFindProvidersByQualityRatingNotRated() {
+		 SearchCriteria criteria = new SearchCriteria();
+		 criteria.setRatingId(new Long(1));
+		 List providers = searchDao.findProvidersByCriteria(criteria);
+		 Assert.assertNotSame(0, providers.size());
+	}
+
+	@Test
+	public void testFindProvidersByQualityRatingLow() {
+		 SearchCriteria criteria = new SearchCriteria();
+		 criteria.setRatingId(new Long(2));
+		 List providers = searchDao.findProvidersByCriteria(criteria);
+		 Assert.assertNotSame(0, providers.size());
+	}
+	
+	@Test
+	public void testFindProvidersByQualityRatingAverage() {
+		 SearchCriteria criteria = new SearchCriteria();
+		 criteria.setRatingId(new Long(3));
+		 List providers = searchDao.findProvidersByCriteria(criteria);
+		 Assert.assertNotSame(0, providers.size());
+	}
+	
+	public void testFindProvidersByQualityRatingGood() {
+		 SearchCriteria criteria = new SearchCriteria();
+		 criteria.setRatingId(new Long(4));
+		 List providers = searchDao.findProvidersByCriteria(criteria);
+		 Assert.assertNotSame(0, providers.size());
+	}
+	
+	public void testFindProvidersByQualityRatingVeryGood() {
+		 SearchCriteria criteria = new SearchCriteria();
+		 criteria.setRatingId(new Long(5));
+		 List providers = searchDao.findProvidersByCriteria(criteria);
+		 Assert.assertNotSame(0, providers.size());
+	}
+	
+	public void testFindProvidersByQualityRatingExcellent() {
+		 SearchCriteria criteria = new SearchCriteria();
+		 criteria.setRatingId(new Long(6));
+		 List providers = searchDao.findProvidersByCriteria(criteria);
+		 Assert.assertNotSame(0, providers.size());
+	}
 }

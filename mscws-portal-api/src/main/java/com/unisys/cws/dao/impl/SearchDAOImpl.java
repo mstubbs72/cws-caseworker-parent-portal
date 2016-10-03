@@ -37,27 +37,27 @@ public class SearchDAOImpl implements ISearchDAO {
 			}
 			if (null != searchCriteria.getCityId()) {
 				if (null != str && !"".equalsIgnoreCase(str))
-					str = str + " and p.city.cityNumber = " + searchCriteria.getCityId();
+					str = str + " and p.physicalCity.id = " + searchCriteria.getCityId();
 				else
-					str = str + " p.city.cityNumber = " + searchCriteria.getCityId();
+					str = str + " p.physicalCity.id = " + searchCriteria.getCityId();
 			}
 			if (null != searchCriteria.getCountyId()) {
 				if (null != str && !"".equalsIgnoreCase(str))
-					str = str + " and p.county.id = " + searchCriteria.getCountyId();
+					str = str + " and p.county.countyNumber = " + searchCriteria.getCountyId();
 				else
-					str = str + " p.county.id = " + searchCriteria.getCountyId();
+					str = str + " p.county.countyNumber = " + searchCriteria.getCountyId();
 			}
 			if (null != searchCriteria.getRatingId()) {
 				if (null != str && !"".equalsIgnoreCase(str))
-					str = str + " and p.qualityRating.id = " + searchCriteria.getRatingId();
+					str = str + " and p.qualityRating.qualityRating = " + searchCriteria.getRatingId();
 				else
-					str = str + " p.qualityRating.id = " + searchCriteria.getRatingId();
+					str = str + " p.qualityRating.qualityRating = " + searchCriteria.getRatingId();
 			}
 			if (null != searchCriteria.getProviderTypeId()) {
 				if (null != str && !"".equalsIgnoreCase(str))
-					str = str + " and p.providerType.id = " + searchCriteria.getProviderTypeId();
+					str = str + " and p.providerType.providerType = " + searchCriteria.getProviderTypeId();
 				else
-					str = str + " p.providerType.id = " + searchCriteria.getProviderTypeId();
+					str = str + " p.providerType.providerType = " + searchCriteria.getProviderTypeId();
 			}
 		}
 		if (!"".equals(str)) {
