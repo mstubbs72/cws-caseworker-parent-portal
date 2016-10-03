@@ -80,6 +80,9 @@ body {
 .fontSize16{
 	font-size: 16px;
 }
+.headerFontSize{
+	font-size: 25px;
+}
 .imgLogoMaxWd{
 	max-width: 6em;
 }
@@ -300,6 +303,18 @@ body {
 	background-color: white;
 	background-image: linear-gradient(to bottom,#ffffff 0,#ffffff 100%);
 }
+.posFixCls{
+	position:fixed;
+	z-index:1000;
+}
+.headerCss{
+	top: 0;
+	white-space:pre-line;
+}
+.footerCss{
+	bottom:0;
+	padding:6px
+}
 		
 /* Responsive Styles */
 @media (min-width: 994px ) {
@@ -326,7 +341,9 @@ body {
 	#filterTypeId, #moreDetailsNameId{
 		display: block;
 	}
-	
+	.headerFontSize{
+		font-size: 17px;
+	}
 }
 @media (max-width: 767px) {
 
