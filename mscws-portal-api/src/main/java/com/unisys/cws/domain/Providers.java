@@ -1,10 +1,6 @@
 package com.unisys.cws.domain;
 
-import java.util.HashSet;
-import java.util.Set;
-
 import javax.persistence.CascadeType;
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -13,13 +9,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "providers")
 public class Providers {
 
+	
 	public Long getId() {
 		return id;
 	}
@@ -76,11 +72,11 @@ public class Providers {
 		this.providerCapacity = providerCapacity;
 	}
 
-	public City getPhysicalCity() {
+	public String getPhysicalCity() {
 		return physicalCity;
 	}
 
-	public void setPhysicalCity(City physicalCity) {
+	public void setPhysicalCity(String physicalCity) {
 		this.physicalCity = physicalCity;
 	}
 
@@ -101,104 +97,30 @@ public class Providers {
 	}
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy=GenerationType.IDENTITY) 
 	Long id;
 
-	String providerName;
-
+	String providerName; 
+	
 	@Enumerated(EnumType.ORDINAL)
-	LicenseType licenseType;
-
-	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	ProviderType providerType;
-
-	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	QualityRating qualityRating;
-
-	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	County county;
-
+	LicenseType licenseType; 
+	
+	@ManyToOne(cascade = CascadeType.ALL , fetch = FetchType.EAGER)
+	ProviderType providerType; 
+	
+	@ManyToOne(cascade = CascadeType.ALL , fetch = FetchType.EAGER)
+	QualityRating qualityRating; 
+	
+	@ManyToOne(cascade = CascadeType.ALL , fetch = FetchType.EAGER)
+	County county; 
+	
 	int providerCapacity;
-
-	@Column(nullable = true)
-	int providerAvlCapacity;
-
-	@ManyToOne(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
-	City physicalCity;
-
+	
+	String physicalCity;
+	
 	String physicalZipCode;
-
+	
 	String phoneNumber;
-
-	@Column(nullable = true)
-	boolean providesFullTime;
-	@Column(nullable = true)
-	boolean providesPartTime;
-	@Column(nullable = true)
-	boolean providesHandicappedAccess;
 	
-	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-	Set<ProviderAgeSupport> providerAgeSupport = new HashSet<ProviderAgeSupport>(0);
-
-	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-	Set<ProviderSpecialNeedSupported> providerSpecialNeeds = new HashSet<ProviderSpecialNeedSupported>(0);
-
-	String description; 
 	
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
-	public int getProviderAvlCapacity() {
-		return providerAvlCapacity;
-	}
-
-	public void setProviderAvlCapacity(int providerAvlCapacity) {
-		this.providerAvlCapacity = providerAvlCapacity;
-	}
-
-	public boolean isProvidesFullTime() {
-		return providesFullTime;
-	}
-
-	public void setProvidesFullTime(boolean providesFullTime) {
-		this.providesFullTime = providesFullTime;
-	}
-
-	public boolean isProvidesPartTime() {
-		return providesPartTime;
-	}
-
-	public void setProvidesPartTime(boolean providesPartTime) {
-		this.providesPartTime = providesPartTime;
-	}
-
-	public boolean isProvidesHandicappedAccess() {
-		return providesHandicappedAccess;
-	}
-
-	public void setProvidesHandicappedAccess(boolean providesHandicappedAccess) {
-		this.providesHandicappedAccess = providesHandicappedAccess;
-	}
-
-	public Set<ProviderAgeSupport> getProviderAgeSupport() {
-		return providerAgeSupport;
-	}
-
-	public void setProviderAgeSupport(Set<ProviderAgeSupport> providerAgeSupport) {
-		this.providerAgeSupport = providerAgeSupport;
-	}
-
-	public Set<ProviderSpecialNeedSupported> getProviderSpecialNeeds() {
-		return providerSpecialNeeds;
-	}
-
-	public void setProviderSpecialNeeds(Set<ProviderSpecialNeedSupported> providerSpecialNeeds) {
-		this.providerSpecialNeeds = providerSpecialNeeds;
-	}
-
 }

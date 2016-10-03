@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.unisys.cws.dao.IMetadataDAO;
-import com.unisys.cws.domain.City;
 import com.unisys.cws.domain.County;
 import com.unisys.cws.domain.ProviderType;
 import com.unisys.cws.domain.QualityRating;
@@ -30,15 +29,6 @@ public class MetadataDAOImpl implements IMetadataDAO{
 	
 	public List<QualityRating> getAllRatings(){
 		return sessionFactory.getCurrentSession().createQuery("from QualityRating p").list();
-	}
-	 
-	@Override
-	public List<City> getCitiesByCountyId(Long id) {
-		return sessionFactory.getCurrentSession().createQuery("from City c where c.county.countyNumber = "+id).list();
-	}
-	@Override
-	public List<City> getCities() {
-		return sessionFactory.getCurrentSession().createQuery("from City c").list();
 	}
 
 }
