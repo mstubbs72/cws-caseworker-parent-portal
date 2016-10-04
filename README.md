@@ -37,7 +37,7 @@ Multi-disciplinary and collaborative team includes eight (8) labor categories:
 1. Product Owner – Christopher Cox
 2. Technical Architect / Back End Web Developer – Kirtish Kulkarni
 3. Front End Web Developer – Ankit Kumar
-4. Interaction Designer/User Researcher/Usability Tester – Lacy Carter
+4. Interaction Designer/User Researcher/Usability Tester – Mike Stubbs
 5. Tech Writer – Martha Koffman 
 6. Lawyer – TBD
 7. Visual Designer - Arun Purohit
